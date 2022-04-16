@@ -2,7 +2,7 @@
   "name": "reactbypete",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://codetracklift.github.io/reactbypete/",
+  "homepage": "https://codetracklift.github.io/reactByPete/",
   "dependencies": {
     "bootstrap": "^5.1.3",
     "react": "^18.0.0",
