@@ -1,0 +1,15 @@
+footer {
+    animation: hide 2.9s ease-in-out;
+}
+
+@keyframes hide {
+    0% {
+        opacity: 0;
+    }
+    99% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

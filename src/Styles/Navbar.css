@@ -1,0 +1,100 @@
+.navbar {
+    width: 100%;
+    height: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.navbar-nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.navbar-nav>li>a {
+    display: inline-block;
+}
+
+.navbar-toggler {
+    border: none;
+    background-color: transparent;
+}
+
+.navbar-collapse {
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+    background-color: black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 0.25rem;
+    padding-left: 1rem;
+    height: fit-content;
+}
+
+.nav-link {
+    transition: all 0.25s ease-in-out;
+    font-family: Menlo Regular;
+}
+
+.active {
+    border-bottom: 1px solid white;
+    margin-bottom: -1px;
+}
+
+.nav-link:hover {
+    border-bottom: 1px solid lime;
+    margin-bottom: -1px;
+    color: lime !important;
+    opacity: 1;
+    text-decoration: none;
+}
+
+.navbar>div>h3 {
+    text-shadow: 1px 1px black;
+}
+
+.navbar-toggler>img {
+    animation: logoWiggle 5s infinite ease-in-out;
+    width: 2.5rem;
+    -webkit-filter: drop-shadow(2px 2px 2px black);
+    filter: drop-shadow(2px 2px 2px black);
+}
+
+.navbar-toggler>img:hover {
+    /* animation: logoWiggle 5s infinite ease-in-out; */
+    animation: spinFaster 2s ease-in-out infinite;
+}
+
+@keyframes logoWiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    1% {
+        transform: rotate(10deg);
+    }
+
+    2% {
+        transform: rotate(-10deg);
+    }
+
+    4% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: scale(-1, 1);
+    }
+}
+
+@keyframes spinFaster {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(-1, 1) scale(1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

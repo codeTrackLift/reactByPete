@@ -1,0 +1,371 @@
+/* Intro Animations Below */
+.animationDropDown {
+    color: white;
+    animation: animationDropDown 1s ease-in-out;
+}
+
+@keyframes animationDropDown {
+    0% {
+        margin-top: -50vh;
+    }
+
+    30% {
+        margin-top: 10;
+    }
+
+    85% {
+        margin-top: 0;
+    }
+}
+
+.animationSlideFromLeft {
+    color: white;
+    font-style: italic;
+    animation: animationSlideFromLeft 3s;
+    letter-spacing: 0.3rem;
+    padding-bottom: 1rem;
+}
+
+.animationSlideFromLeft>:nth-child(2) {
+    color: #00857c;
+}
+
+@keyframes animationSlideFromLeft {
+    0% {
+        margin-left: -200vw;
+        letter-spacing: 0;
+    }
+
+    30% {
+        margin-left: -150vw;
+        letter-spacing: -0.125rem;
+    }
+
+    40% {
+        margin-left: -125vw;
+        letter-spacing: -0.125rem;
+    }
+
+    90% {
+        margin-left: 30vw;
+        letter-spacing: -0.4rem;
+    }
+
+    95% {
+        letter-spacing: 0.4rem;
+    }
+}
+
+.animationExpand {
+    animation: animationExpand 3.25s ease-in;
+    color: lime;
+}
+
+@keyframes animationExpand {
+    0% {
+        opacity: 0;
+        font-size: 0rem;
+    }
+
+    59% {
+        opacity: 0;
+        font-size: 0rem;
+    }
+
+    79% {
+        opacity: 0;
+        font-size: 0rem;
+    }
+
+    80% {
+        opacity: 1;
+        font-size: 0.1rem;
+    }
+
+    89% {
+        font-size: 2.5rem;
+    }
+}
+
+.animationTurnGreen {
+    animation: animationTurnGreen 3.25s ease-in-out;
+    color: lime;
+}
+
+@keyframes animationTurnGreen {
+    0% {
+        color: #00857c;
+    }
+
+    89% {
+        color: #00857c;
+        font-size: 2rem;
+    }
+
+    90% {
+        color: lime;
+        font-size: 2.5rem;
+    }
+}
+
+.animationTurnOpaque {
+    animation: animationTurnOpaque 4s ease-in-out;
+    opacity: 0.3;
+}
+
+@keyframes animationTurnOpaque {
+    0% {
+        opacity: 1;
+    }
+
+    76% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.3;
+    }
+}
+
+.animationBorder {
+    border: 1px solid lime;
+    border-radius: 0.125rem;
+    animation: animationBorder 4.25s ease-in-out;
+}
+
+@keyframes animationBorder {
+    0% {
+        border: none;
+    }
+
+    66% {
+        border: none;
+    }
+
+    71% {
+        border: 8px solid lime;
+    }
+
+    100% {
+        border: 1px solid lime;
+    }
+}
+
+/* Intro Animations Above */
+
+/* typeWriter below */
+#typeWriter {
+    margin: 0 auto;
+    width: fit-content;
+    padding: 5vh 0;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+#typeWriterSection {
+    background-color: black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 100vw;
+    max-width: 100vw;
+    overflow-x: hidden;
+    animation: animationFadeIn 4.25s ease-in-out;
+}
+
+@media (max-width: 635px) {
+    #typeWriter>h2 {
+        font-size: 4vw;
+    }
+
+    #typeWriter>h2 {
+        font-size: 1.5rem !important;
+        letter-spacing: normal !important;
+    }
+}
+
+@media (max-width: 500px) {
+    #typeWriter>h2 {
+        font-size: 1.25rem !important;
+        letter-spacing: normal !important;
+    }
+}
+
+@media (max-width: 350px) {
+    #typeWriter>h2 {
+        font-size: 1rem !important;
+        letter-spacing: normal !important;
+    }
+}
+
+@media (max-height: 500px) {
+    #typeWriterSection {
+        margin-top: -5vh;
+    }
+}
+
+@keyframes animationFadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    56.125% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    59.125% {
+        transform: scale(1);
+        opacity: 1;
+    }   
+}
+
+#typeWriter>h2 {
+    position: relative;
+    width: max-content;
+    font-weight: normal;
+    font-family: Menlo Regular;
+    font-size: 1.75rem;
+    letter-spacing: 0.125rem;
+    color: silver;
+}
+
+#typeWriter1:before,
+#typeWriter1:after,
+#typeWriter2:before,
+#typeWriter2:after,
+#typeWriter3:before,
+#typeWriter3:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+#typeWriter1::before {
+    width: 100vw;
+    background: black;
+    animation: write 1s steps(22) 0.5s forwards;
+    animation-delay: 4s;
+}
+
+#typeWriter1::after {
+    opacity: 1;
+    width: 0.15em;
+    background: black;
+    animation: write 1s steps(22) 0.5s forwards, blink 0.75s reverse steps(22) 2;
+    animation-delay: 4s;
+}
+
+@keyframes write {
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+        background: white;
+    }
+
+    49.9% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        background: white;
+    }
+
+    98% {
+        opacity: 1;
+        background: white;
+    }
+
+    100% {
+        opacity: 0;
+        background: white;
+    }
+}
+
+#typeWriter2 {
+    animation: typeWriter2Fade 7s ease-in-out;
+}
+
+@keyframes typeWriter2Fade {
+    0% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    80.9% {
+        opacity: 1;
+
+    }
+
+    81% {
+        opacity: 1;
+    }
+
+    100% {}
+}
+
+#typeWriter2::before {
+    width: 100vw;
+    background: black;
+    animation: write 1.5s steps(28) 0.5s forwards;
+    animation-delay: 5.5s;
+}
+
+#typeWriter2::after {
+    opacity: 1;
+    width: 0.15em;
+    background: black;
+    animation: write 1.5s steps(28) 0.5s forwards, blink 0.75s reverse steps(28) 3;
+    animation-delay: 5.5s;
+}
+
+#typeWriter3 {
+    animation: typeWriter3Fade 11s ease-in-out;
+}
+
+@keyframes typeWriter3Fade {
+    0% {
+        opacity: 0;
+    }
+
+    59% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 1;
+
+    }
+
+    81% {
+        opacity: 1;
+    }
+
+    100% {}
+}
+
+#typeWriter3::before {
+    width: 100vw;
+    background: black;
+    animation: write 1.5s steps(24) 0.5s forwards;
+    animation-delay: 7.5s;
+}
+
+#typeWriter3::after {
+    opacity: 1;
+    width: 0.15em;
+    background: black;
+    animation: write 1.5s steps(24) 0.5s forwards, blink 0.75s reverse steps(24) infinite;
+    animation-delay: 7.5s;
+}

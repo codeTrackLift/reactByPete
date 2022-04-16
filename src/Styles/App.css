@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'Menlo Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Menlo Regular'), url('../Libraries/Menlo-Regular.woff') format('woff');
+}
+
+.menloRegular {
+    font-family: Menlo Regular;
+}
+
+.cornflowerBlue {
+    color: cornflowerblue;
+}
+
+.chocolate {
+    color: chocolate;
+}
+
+.textSilver {
+    color: silver;
+}
+
+.textGray {
+    color: gray;
+}
+
+.textShadowBlack {
+    text-shadow: 1px 1px black;
+}
+
+.boxShadowSmall {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.boxShadowBig {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.dropShadow {
+    -webkit-filter: drop-shadow(1px 1px 1px black);
+    filter: drop-shadow(1px 1px 1px black);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  background-color: black;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  background-color: transparent;
+  align-items: center;
+}
+
+#mainContent {
+    width: 100%;
+}
+
+a,
+a:link,
+a:visited {
+  color: lime;
+  text-decoration: none;
+  transition: all 0.25s ease-in-out;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+    opacity: 0.75;
+}
+
+#githubContributions {
+    width: 100%;
+    opacity: 0;
+    transition: all 0.25s ease-in-out;
+    transform: scale(0.5);
+}
+
+#githubContributions>a>img {
+    margin: 1rem 0;
+    width: 90vw;
+    max-width: 960px;
+}
+
+.show {
+    opacity: 1 !important;
+    transform: scale(1) !important;
+    z-index: 1;
+}
+
+#githubContributions>a:hover,
+#githubContributions>a>img:hover {
+    opacity: 1;
+}
+
