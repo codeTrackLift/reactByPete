@@ -150,23 +150,11 @@ body {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px !important;
 }
 
-#carousel {
-    margin: -3rem;
-    transform: scale(0);
-    background-color: rgb(50, 50, 50);
-}
-
-#footer {
-    height: 0;
-    margin-top: -3rem;
-    background-color: black;
-}
-
 @media (max-width:575px) {
     #footer {
         height: 2.5rem;
     }
-    .carousel-inner{
+    .carousel-item{
         max-width: 40rem;
         height: 9rem;
     }
@@ -176,7 +164,7 @@ body {
 }
 
 @media (max-width:350px) {
-    .carousel-inner{
+    .carousel-item{
         max-width: 40rem;
         height: 12.5rem;
     }

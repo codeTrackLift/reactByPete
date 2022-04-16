@@ -2,7 +2,6 @@ import React from 'react';
 import Welcome from './Welcome';
 import Footer from './Footer';
 import '../Styles/App.css';
-import ScrollMagic from 'scrollmagic';
 
 function App() {
 
