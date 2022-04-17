@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/reactByPete/static/css/main.555e4ec0.css",
-    "main.js": "/reactByPete/static/js/main.f4809397.js",
+    "main.css": "/reactByPete/static/css/main.36f52f6e.css",
+    "main.js": "/reactByPete/static/js/main.937959a1.js",
     "static/media/vesselCode_tilt_part.jpg": "/reactByPete/static/media/vesselCode_tilt_part.ff1c18871b748da16c94.jpg",
     "static/media/Menlo-Regular.woff": "/reactByPete/static/media/Menlo-Regular.02bb017483128058c0d0.woff",
     "static/media/crushItApple.jpg": "/reactByPete/static/media/crushItApple.bd1ed3333bfe1e749e0f.jpg",
@@ -13,11 +13,11 @@
     "static/media/css3_logo.gif": "/reactByPete/static/media/css3_logo.64b3f3247fd116cf99e3.gif",
     "static/media/bootstrap-logo.svg": "/reactByPete/static/media/bootstrap-logo.b91717f3b8ef81a7bf2e8b03a9579108.svg",
     "index.html": "/reactByPete/index.html",
-    "main.555e4ec0.css.map": "/reactByPete/static/css/main.555e4ec0.css.map",
-    "main.f4809397.js.map": "/reactByPete/static/js/main.f4809397.js.map"
+    "main.36f52f6e.css.map": "/reactByPete/static/css/main.36f52f6e.css.map",
+    "main.937959a1.js.map": "/reactByPete/static/js/main.937959a1.js.map"
   },
   "entrypoints": [
-    "static/css/main.555e4ec0.css",
-    "static/js/main.f4809397.js"
+    "static/css/main.36f52f6e.css",
+    "static/js/main.937959a1.js"
   ]
 }
