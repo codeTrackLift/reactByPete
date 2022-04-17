@@ -13,8 +13,11 @@ body {
     background-position: 50% 3rem;
 }
 
+#App {
+    padding-top: 2.25rem;
+}
+
 .vesselBackground {
-    padding-top: 2rem;
     background-size: contain;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -148,6 +151,20 @@ body {
 .shift {
     transform: scale(1) !important;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px !important;
+}
+
+#carousel {
+    z-index: 1;
+    margin: 2rem 0 1rem 0;
+    width: 100vw;
+    background-color: rgb(50,50,50);
+}
+
+.carousel-inner {
+    max-width: 50rem;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(50,50,50);
 }
 
 @media (max-width:575px) {

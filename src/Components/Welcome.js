@@ -24,8 +24,8 @@ export default function Welcome() {
     const injectContent = () => {
         setContent(mainContent);
     }
-    setTimeout(injectContent, 2900);
-    setTimeout(initScrollMagic, 3000);
+    setTimeout(injectContent, 3250);
+    setTimeout(initScrollMagic, 3250);
     // setTimeout(initCBPLogo, 3000);
 
 
@@ -145,21 +145,21 @@ const mainContent = () => {
             </Container>
 
             <Carousel id="carousel" className="carousel slide" data-bs-ride="carousel" controls={false} indicators={false}>
-                <Carousel.Item className="">
+                <Carousel.Item>
                     <h3 className="px-5 text-gray textShadowBlack" style={{fontStyle:'italic'}}>"Pharmaceutical experience
                         drives my Good Documentation Practices (GDPs)."</h3>
                     <figcaption className="blockquote-footer text-end mt-3 mx-5">
                         <cite title="Source Title" className="text-white" style={{opacity:0.6}}>quote<span style={{color:'#00857c'}}>By</span><span style={{color:'lime'}}>Pete</span></cite>
                     </figcaption>
                 </Carousel.Item>
-                <Carousel.Item className="">
+                <Carousel.Item>
                     <h3 className="px-5 text-gray textShadowBlack" style={{fontStyle:'italic'}}>"Front-load effort, spend time
                         to understand the problem before proposing a solution."</h3>
                     <figcaption className="blockquote-footer text-end mt-3 mx-5">
                         <cite title="Source Title" className="text-white" style={{opacity:0.6}}>quote<span style={{color:'#00857c'}}>By</span><span style={{color:'lime'}}>Pete</span></cite>
                     </figcaption>
                 </Carousel.Item>
-                <Carousel.Item className="">
+                <Carousel.Item>
                     <h3 className="px-5 text-gray textShadowBlack" style={{fontStyle:'italic'}}>"Successful projects are
                         planned before implementation, and tested before release."</h3>
                     <figcaption className="blockquote-footer text-end mt-3 mx-5">

@@ -1,4 +1,7 @@
 .navbar {
+    z-index: 10;
+    position: fixed;
+    top: 0;
     width: 100%;
     height: 2rem;
     max-width: 1400px;
@@ -13,6 +16,7 @@
 
 .navbar-nav>li>a {
     display: inline-block;
+    color: gray !important;
 }
 
 .navbar-toggler {

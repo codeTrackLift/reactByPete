@@ -169,7 +169,7 @@
     width: 100vw;
     max-width: 100vw;
     overflow-x: hidden;
-    animation: animationFadeIn 4.25s ease-in-out;
+    animation: animationFadeIn 5s ease-in-out;
 }
 
 @media (max-width: 635px) {

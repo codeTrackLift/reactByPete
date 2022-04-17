@@ -1,4 +1,5 @@
 import React from 'react';
+import MyNavBar from './Navbar';
 import Welcome from './Welcome';
 import Footer from './Footer';
 import '../Styles/App.css';
@@ -10,10 +11,11 @@ function App() {
         const newBackground = 'vesselBackground';
         setBackground(newBackground);
     }
-    setTimeout(welcomeBackground, 2900);
+    setTimeout(welcomeBackground, 3250);
 
     return (
         <div id='App' className={background}>
+            <MyNavBar />
             <Welcome />
             <Footer />
         </div>
