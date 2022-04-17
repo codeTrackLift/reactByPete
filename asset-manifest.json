@@ -1,23 +1,31 @@
 {
   "files": {
-    "main.css": "/reactByPete/static/css/main.a60d81aa.css",
-    "main.js": "/reactByPete/static/js/main.2c428697.js",
+    "main.css": "/reactByPete/static/css/main.ec3fd947.css",
+    "main.js": "/reactByPete/static/js/main.4653a64e.js",
+    "static/media/peteTheForce.png": "/reactByPete/static/media/peteTheForce.579230d33eead5f9ff25.png",
+    "static/media/peteLaFitness.jpg": "/reactByPete/static/media/peteLaFitness.b393068046f5ac59e195.jpg",
     "static/media/vesselCode_tilt_part.jpg": "/reactByPete/static/media/vesselCode_tilt_part.ff1c18871b748da16c94.jpg",
+    "static/media/profilepic.gif": "/reactByPete/static/media/profilepic.784a82fcf21f704c145c.gif",
+    "static/media/githubContributions_100Days.jpg": "/reactByPete/static/media/githubContributions_100Days.2327dc0ccdb6946cc9ca.jpg",
     "static/media/Menlo-Regular.woff": "/reactByPete/static/media/Menlo-Regular.02bb017483128058c0d0.woff",
+    "static/media/peteSwitch.jpg": "/reactByPete/static/media/peteSwitch.0dcc1809595768c8c526.jpg",
     "static/media/crushItApple.jpg": "/reactByPete/static/media/crushItApple.bd1ed3333bfe1e749e0f.jpg",
+    "static/media/peteSTi.jpg": "/reactByPete/static/media/peteSTi.8ec496b1abaa2cd6236a.jpg",
     "static/media/mernStackTrans.png": "/reactByPete/static/media/mernStackTrans.b6f2e2dd60d59a096abb.png",
     "static/media/vsCodeLogo.png": "/reactByPete/static/media/vsCodeLogo.a61dc62c499ed3aeefdc.png",
+    "static/media/peteSnowboardingMountain.jpg": "/reactByPete/static/media/peteSnowboardingMountain.6144fd558528751778bb.jpg",
     "static/media/githubContributions.png": "/reactByPete/static/media/githubContributions.e14afffc7d096cab9a08.png",
+    "static/media/issa_logo.gif": "/reactByPete/static/media/issa_logo.1a5f7c1dc0018c58c9cc.gif",
     "static/media/jest_logo.gif": "/reactByPete/static/media/jest_logo.171a7cc39ba4c700c343.gif",
     "static/media/html5_logo.gif": "/reactByPete/static/media/html5_logo.bf6efac10dd0ad68e249.gif",
     "static/media/css3_logo.gif": "/reactByPete/static/media/css3_logo.64b3f3247fd116cf99e3.gif",
     "static/media/bootstrap-logo.svg": "/reactByPete/static/media/bootstrap-logo.b91717f3b8ef81a7bf2e8b03a9579108.svg",
     "index.html": "/reactByPete/index.html",
-    "main.a60d81aa.css.map": "/reactByPete/static/css/main.a60d81aa.css.map",
-    "main.2c428697.js.map": "/reactByPete/static/js/main.2c428697.js.map"
+    "main.ec3fd947.css.map": "/reactByPete/static/css/main.ec3fd947.css.map",
+    "main.4653a64e.js.map": "/reactByPete/static/js/main.4653a64e.js.map"
   },
   "entrypoints": [
-    "static/css/main.a60d81aa.css",
-    "static/js/main.2c428697.js"
+    "static/css/main.ec3fd947.css",
+    "static/js/main.4653a64e.js"
   ]
 }
