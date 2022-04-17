@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/reactByPete/static/css/main.a60d81aa.css",
-    "main.js": "/reactByPete/static/js/main.54e34510.js",
+    "main.js": "/reactByPete/static/js/main.2c428697.js",
     "static/media/vesselCode_tilt_part.jpg": "/reactByPete/static/media/vesselCode_tilt_part.ff1c18871b748da16c94.jpg",
     "static/media/Menlo-Regular.woff": "/reactByPete/static/media/Menlo-Regular.02bb017483128058c0d0.woff",
     "static/media/crushItApple.jpg": "/reactByPete/static/media/crushItApple.bd1ed3333bfe1e749e0f.jpg",
@@ -14,10 +14,10 @@
     "static/media/bootstrap-logo.svg": "/reactByPete/static/media/bootstrap-logo.b91717f3b8ef81a7bf2e8b03a9579108.svg",
     "index.html": "/reactByPete/index.html",
     "main.a60d81aa.css.map": "/reactByPete/static/css/main.a60d81aa.css.map",
-    "main.54e34510.js.map": "/reactByPete/static/js/main.54e34510.js.map"
+    "main.2c428697.js.map": "/reactByPete/static/js/main.2c428697.js.map"
   },
   "entrypoints": [
     "static/css/main.a60d81aa.css",
-    "static/js/main.54e34510.js"
+    "static/js/main.2c428697.js"
   ]
 }
