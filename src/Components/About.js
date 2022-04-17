@@ -1,7 +1,5 @@
 import React from 'react';
 import Footer from './Footer';
-import '../Styles/App.css';
-import '../Styles/Navbar.css';
 // import '../Styles/About.css';
 import '../Styles/Cards.css';
 import '../Styles/Typewriter_cTL.css';

@@ -52,7 +52,6 @@
 }
 
 .nav-link:hover {
-    transform: perspective(3px) rotateX(2deg);
     border-bottom: 1px solid lime;
     color: lime !important;
     opacity: 1;

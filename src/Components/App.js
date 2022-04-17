@@ -3,7 +3,7 @@ import { Nav, Navbar } from 'react-bootstrap'
 import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 import pharma2CodeLogo from '../Images/pharma2code_icon.gif';
 import '../Styles/App.css';
-// import '../Styles/Navbar.css';
+import '../Styles/Navbar.css';
 import { Welcome } from './Welcome';
 import { About } from './About';
 import { Blog } from './Blog';
@@ -25,7 +25,7 @@ function App() {
                     <h3 id='navbarCBP' className="d-block d-sm-none" style={{fontStyle:'italic',letterSpacing:'2vw'}}><span style={{color:'white'}}>code</span><span style={{color:'#00857c'}}>By</span><span style={{color:'lime'}}>Pete</span></h3>
                     <Navbar.Collapse className="collapse navbar-collapse" id="navbarTogglerDemo02">
                         <Nav className="navbar-nav me-auto mb-2 mb-lg-0" defaultActiveKey={1}>
-                            <Nav.Link eventKey={1} onClick={() => setExpanded(false)} href='*' as={NavLink} to='/Welcome'>Welcome</Nav.Link>
+                            <Nav.Link eventKey={1} onClick={() => setExpanded(false)} href='*' as={NavLink} to='/'>Welcome</Nav.Link>
                             <Nav.Link eventKey={2} onClick={() => setExpanded(false)} href='/About' as={NavLink} to='/About'>About</Nav.Link>
                             <Nav.Link eventKey={3} onClick={() => setExpanded(false)} href='/Blog' as={NavLink} to='/Blog'>Blog</Nav.Link>
                             <Nav.Link eventKey={4} onClick={() => setExpanded(false)} href='/Projects' as={NavLink} to='/Projects'>Projects</Nav.Link>
