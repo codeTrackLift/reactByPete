@@ -154,7 +154,7 @@
 /* Intro Animations Above */
 
 /* typeWriter below */
-#typeWriter {
+#typeWriterSectionWelcome>#typeWriter {
     margin: 0 auto;
     width: fit-content;
     padding: 5vh 0;
@@ -163,7 +163,7 @@
     flex-direction: column;
 }
 
-#typeWriterSection {
+#typeWriterSectionWelcome {
     background-color: black;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     width: 100vw;
@@ -173,32 +173,32 @@
 }
 
 @media (max-width: 635px) {
-    #typeWriter>h2 {
+    #typeWriterSectionWelcome>#typeWriter>h2 {
         font-size: 4vw;
     }
 
-    #typeWriter>h2 {
+    #typeWriterSectionWelcome>#typeWriter>h2 {
         font-size: 1.5rem !important;
         letter-spacing: normal !important;
     }
 }
 
 @media (max-width: 500px) {
-    #typeWriter>h2 {
+    #typeWriterSectionWelcome>#typeWriter>h2 {
         font-size: 1.25rem !important;
         letter-spacing: normal !important;
     }
 }
 
 @media (max-width: 350px) {
-    #typeWriter>h2 {
+    #typeWriterSectionWelcome>#typeWriter>h2 {
         font-size: 1rem !important;
         letter-spacing: normal !important;
     }
 }
 
 @media (max-height: 500px) {
-    #typeWriterSection {
+    #typeWriterSectionWelcome {
         margin-top: -5vh;
     }
 }
@@ -220,7 +220,7 @@
     }   
 }
 
-#typeWriter>h2 {
+#typeWriterSectionWelcome>#typeWriter>h2 {
     position: relative;
     width: max-content;
     font-weight: normal;
@@ -230,12 +230,12 @@
     color: silver;
 }
 
-#typeWriter1:before,
-#typeWriter1:after,
-#typeWriter2:before,
-#typeWriter2:after,
-#typeWriter3:before,
-#typeWriter3:after {
+#typeWriterSectionWelcome>#typeWriter>#typeWriter1:before,
+#typeWriterSectionWelcome>#typeWriter>#typeWriter1:after,
+#typeWriterSectionWelcome>#typeWriter>#typeWriter2:before,
+#typeWriterSectionWelcome>#typeWriter>#typeWriter2:after,
+#typeWriterSectionWelcome>#typeWriter>#typeWriter3:before,
+#typeWriterSectionWelcome>#typeWriter>#typeWriter3:after {
     content: "";
     position: absolute;
     top: 0;
@@ -243,14 +243,14 @@
     height: 100%;
 }
 
-#typeWriter1::before {
+#typeWriterSectionWelcome>#typeWriter>#typeWriter1::before {
     width: 100vw;
     background: black;
     animation: write 1s steps(22) 0.5s forwards;
     animation-delay: 4s;
 }
 
-#typeWriter1::after {
+#typeWriterSectionWelcome>#typeWriter>#typeWriter1::after {
     opacity: 1;
     width: 0.15em;
     background: black;
@@ -290,7 +290,7 @@
     }
 }
 
-#typeWriter2 {
+#typeWriterSectionWelcome>#typeWriter>#typeWriter2 {
     animation: typeWriter2Fade 7s ease-in-out;
 }
 
@@ -315,14 +315,14 @@
     100% {}
 }
 
-#typeWriter2::before {
+#typeWriterSectionWelcome>#typeWriter>#typeWriter2::before {
     width: 100vw;
     background: black;
     animation: write 1.5s steps(28) 0.5s forwards;
     animation-delay: 5.5s;
 }
 
-#typeWriter2::after {
+#typeWriterSectionWelcome>#typeWriter>#typeWriter2::after {
     opacity: 1;
     width: 0.15em;
     background: black;
@@ -330,7 +330,7 @@
     animation-delay: 5.5s;
 }
 
-#typeWriter3 {
+#typeWriterSectionWelcome>#typeWriter>#typeWriter3 {
     animation: typeWriter3Fade 11s ease-in-out;
 }
 
@@ -355,14 +355,14 @@
     100% {}
 }
 
-#typeWriter3::before {
+#typeWriterSectionWelcome>#typeWriter>#typeWriter3::before {
     width: 100vw;
     background: black;
     animation: write 1.5s steps(24) 0.5s forwards;
     animation-delay: 7.5s;
 }
 
-#typeWriter3::after {
+#typeWriterSectionWelcome>#typeWriter>#typeWriter3::after {
     opacity: 1;
     width: 0.15em;
     background: black;

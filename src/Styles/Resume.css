@@ -1,0 +1,143 @@
+html {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+    background-color: rgb(50, 50, 50);
+}
+
+body {
+    background-color: transparent;
+    align-items: center;
+}
+
+#downloadIcon {
+    border: 4px solid transparent;
+    border-radius: 50%;
+    width: 2rem;
+    animation: slowSpin 5s ease-in-out infinite;
+    -webkit-filter: drop-shadow(1px 1px 1px black);
+    filter: drop-shadow(1px 1px 1px black);
+}
+
+#downloadIcon:hover {
+    background-color: lime;
+    opacity: 1;
+}
+
+/* Experience Tech Stack */
+#techStack>.row,
+#education>.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+a>.img-fluid,a {
+    transition: all 0.5s ease-in-out;
+}
+a>.img-fluid:hover {
+    opacity: 0.5;
+}
+
+.imgWhiteBg {
+    height: 5rem;
+    width: 5rem;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.img-round {
+    border-radius: 50%;
+}
+
+.img-square {
+    border-radius: 1.125rem;
+    background-color: transparent;
+    height: 6rem;
+    width: auto;
+}
+
+.img-rect {
+    border-radius: 0.25rem;
+    background-color: transparent;
+    height: auto;
+    width: 8rem;
+}
+
+.dateSection {
+    background-color: rgb(50, 50, 50);
+    border-radius: 0.25rem;
+    height: 1.75rem;
+}
+
+.dateSection>p {
+    text-shadow: 1px 1px black;
+}
+
+#yodaJim {
+    width: 25rem;
+    opacity: 0 !important;
+    transition: all 0.25s ease-in-out;
+    transform: translateY(3rem);
+    border-radius: 25%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#yodaJim.show{
+    opacity: 1 !important;
+    transform: translateY(0);
+}
+
+/* Article CSS Below */
+.myArticles {
+    margin: 3rem auto;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 0.25rem;
+    background-color: black;
+    width: 90vw;
+    max-width: 960px;
+    line-height: 1.6;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+@media (max-width:960px) {
+    .myArticles {
+        margin: 3rem 5vw;
+    }
+}
+
+.myArticles>div>div>h3>img {
+    width: 20vw;
+    min-width: 5rem;
+    max-width: 10rem;
+    margin-right: 5vw;
+}
+
+h1,
+h2,
+.container-fluid>div>div>h3,
+h4,
+.h3 {
+    color: cornflowerblue;
+    text-align: start;
+    font-family: Menlo Regular;
+}
+
+h5,
+h6,
+p {
+    color: white;
+}
+
+h6 {
+    font-family: Menlo Regular;
+}
+
+ul {
+    color: silver;
+}
+
+#article1>ol>li {
+    margin-bottom: 1rem;
+}

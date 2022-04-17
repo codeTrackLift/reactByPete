@@ -1,12 +1,11 @@
 import React from 'react';
 import Footer from './Footer';
+import { Carousel, Container, Row } from 'react-bootstrap';
+import '../Styles/Navbar.css';
+import '../Styles/Cards.css';
 import '../Styles/Welcome.css';
 import '../Styles/WelcomeAnimations.css';
-import '../Styles/Cards.css';
 import '../Styles/WelcomeFooter.css';
-import { Row } from 'react-bootstrap';
-import { Carousel } from 'react-bootstrap';
-import { Container } from 'react-bootstrap';
 import html5_logo from '../Images/about/html5_logo.gif';
 import css3_logo from '../Images/about/css3_logo.gif';
 import javascript_logo from '../Images/about/javascript_logo.gif';
@@ -19,7 +18,7 @@ import mern_logo from '../Images/about/mernStackTrans.png'
 import githubContributions from '../Images/about/githubContributions.png'
 import ScrollMagic from 'scrollmagic';
 
-export default function Welcome() {
+export const Welcome = () => {
 
     const [content, setContent] = React.useState('');
     const injectContent = () => {
@@ -27,11 +26,17 @@ export default function Welcome() {
     }
     setTimeout(injectContent, 3000);
     setTimeout(initScrollMagic, 3100);
-    setTimeout(initCBPLogo);
+    setTimeout(initCBPLogo, 0);
 
+    const [background, setBackground] = React.useState('');
+    const welcomeBackground = () => {
+        const newBackground = 'vesselBackground';
+        setBackground(newBackground);
+    }
+    setTimeout(welcomeBackground, 3000);
 
     return (
-       <div>
+       <div id='welcomeBackground' className={background}>
            <div id='welcome' className='container-fluid animationBorder'>
                 <figure className=''>
                     <h1 className='animationDropDown textShadowBlack'><span className='animationTurnOpaque'>Welcome to</span></h1>
@@ -40,7 +45,7 @@ export default function Welcome() {
                 </figure>
             </div>
 
-            <section id="typeWriterSection">
+            <section id="typeWriterSectionWelcome">
                 <figure id='typeWriter' className="mx-auto">
                     <h2 id="typeWriter1">
                         <span style={{color: 'cornflowerblue'}}>stationInLife</span>
@@ -176,8 +181,8 @@ const initCBPLogo = () => {
     var navbarCBPController = new ScrollMagic.Controller();
     var navbarCBP = new ScrollMagic.Scene({
             triggerElement: '#welcome',
-            offset: 0,
-            duration: 600
+            offset: -100,
+            duration: 800
         })
         .setClassToggle('#navbarCBP', 'd-none')
         .addTo(navbarCBPController);

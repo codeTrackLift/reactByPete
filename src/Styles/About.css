@@ -1,0 +1,211 @@
+#mainContent {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: rgb(50, 50, 50) ;
+    align-items: center;
+}
+
+/* Article CSS Below */
+.myArticles {
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 0.25rem;
+    background-color: black;
+    width: 90vw;
+    max-width: 960px;
+    line-height: 1.6;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+@media (max-width:960px) {
+    .myArticles {
+        margin: 1rem 5vw;
+    }
+}
+
+.myArticles>div>div>h3>img {
+    width: 20vw;
+    min-width: 5rem;
+    max-width: 10rem;
+    margin-right: 5vw;
+}
+
+h1,
+h2,
+h4,
+h6,
+.container-fluid>div>div>h3,
+.h3 {
+    color: cornflowerblue;
+    font-family: Menlo Regular;
+}
+
+h5,
+p {
+    color: white;
+}
+
+h6 {
+    font-family: Menlo Regular;
+}
+
+ul {
+    color: silver;
+}
+
+a>img {
+    transition: all 0.5s ease-in-out;
+}
+
+a>img:hover {
+    opacity: 0.5;
+}
+
+.img-fluid {
+    height: 10rem;
+    width: 10rem;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+#greetingPic>img {
+    z-index: 2;
+    top: 375px;
+    width: 30rem;
+    height: 30rem;
+    max-width: 40vmin;
+    max-height: 40vmin;
+    /* position: static; */
+    position: fixed;
+    opacity: 0.25;
+    border-radius: 50%;
+    margin: -20rem 0 -12rem 5vw;
+    -webkit-filter: drop-shadow(2px 2px 2px black);
+    filter: drop-shadow(2px 2px 2px black);
+    box-shadow: none;
+}
+
+@media (min-width: 1200px) {
+    #greetingPic>img {
+        margin-left: 20vw;
+    }
+}
+
+@media (min-width: 1400px) {
+    #greetingPic>img {
+        margin-left: 25vw;
+    }
+}
+
+#myIntro {
+    padding: 2rem 5rem;
+}
+
+#myIntro>p,
+#myIntro>div>p {
+    color: gray;
+}
+
+#myIntro>p>span {
+    color: silver;
+}
+
+@media (max-width:540px) {
+    #myIntro>p,
+    #myIntro>h2,
+    #myIntro>h4 {
+        margin-left: -2rem;
+        margin-right: -3rem;
+    }
+}
+
+@media (min-width:500px) {
+    #myIntro>div>p {
+        margin-top: -5rem;
+    }
+}
+
+#githubContributions>div>div>a>img {
+    width: 90%;
+    box-shadow: none;
+}
+
+.carousel-item>a>img:hover {
+    z-index: 1;
+    opacity: 1 !important;
+    transform: scale(1.05);
+}
+
+#personal {
+    margin-bottom: 3rem;
+}
+
+#personal>.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+#personal>*>p {
+    color: gray;
+}
+
+#personal>*>p>span {
+    color: white;
+    font-family: Menlo Regular;
+    font-size: 200;
+}
+
+.img-round {
+    border-radius: 50%;
+}
+
+.img-square {
+    border-radius: 1.125rem;
+    background-color: transparent;
+    height: 10rem;
+    width: auto;
+}
+
+.img-rect {
+    border-radius: 0.25rem;
+    background-color: transparent;
+    height: auto;
+    width: 10rem;
+}
+
+.btnContainer {
+    max-width: 480px;
+}
+
+/* .btn {
+    margin: 0 1px;
+    width: 7rem;
+    border-radius: 2px;
+    border-color: dimgray;
+    background-color: dimgray;
+    color: lime;
+    transition: all 0.25s ease-in-out;
+    opacity: 0 !important;
+    text-decoration: none !important;
+    text-shadow: 1px 1px black;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.show {
+    opacity: 1 !important;
+}
+
+.btn:hover {
+    background-color: transparent;
+    border-color: lime;
+    color: lime;
+}
+
+.buttonEffect {
+    background-color: transparent !important;
+    border: none !important;
+} */

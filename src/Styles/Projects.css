@@ -1,0 +1,61 @@
+html {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  background-color: rgb(50, 50, 50);
+}
+
+body {
+  background-color: transparent;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+  font-family: Menlo Regular;
+  text-align: center;
+  text-shadow: 3px 3px black;
+}
+
+h3, h6 {
+  text-align: center;
+  text-shadow: 2px 2px black;
+}
+
+h5 {
+  color: cornflowerblue;
+}
+
+.myArticles {
+  padding-top: 1rem;
+  margin-bottom: -2rem;
+  color: silver;
+  border-radius: 0.25rem;
+  background-color: transparent;
+  width: 75vw;
+  max-width: 800px;
+  line-height: 1;
+}
+
+.myProjects {
+  max-width: 1400px;
+  justify-content: space-between;
+  display: flex;
+}
+
+.row {
+  margin: 2rem auto;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.btn {
+    opacity: 0 !important;
+}
+
+
+
+.btn:hover, .show {
+    opacity: 1 !important;
+}

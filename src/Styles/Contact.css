@@ -1,0 +1,246 @@
+* {
+    z-index: 5;
+}
+
+html {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: rgb(50, 50, 50);
+}
+
+body {
+    background-color: transparent;
+    align-items: center;
+}
+
+/* Article CSS Below */
+.myArticles {
+    margin: 1rem auto;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 0.25rem;
+    background-color: black;
+    width: 90vw;
+    max-width: 960px;
+    line-height: 1.6;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+@media (max-width:960px) {
+    .myArticles {
+        margin: 1rem 5vw;
+    }
+}
+
+@media (min-width: 1000px) {
+    .myArticles {
+        padding: 1rem 5rem;
+    }
+}
+
+.myArticles>div>div>h6 {
+    color: gray;
+}
+
+h1,
+h2,
+h4,
+.container-fluid>div>div>h3,
+.h3 {
+    color: white;
+    font-family: Menlo Regular;
+}
+
+h5,
+p {
+    color: white;
+}
+
+h6 {
+    font-family: Menlo Regular;
+}
+
+ul {
+    color: silver;
+}
+
+a>img {
+    transition: all 0.25s ease-in-out;
+}
+
+a>img:hover {
+    opacity: 0.5;
+}
+
+#typeWriter>h2 {
+    z-index: 1;
+}
+
+#greetingPic>img {
+    z-index: 2;
+    width: 45vw;
+    height: 35vw;
+    max-width: 26rem;
+    max-height: 20rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    opacity: 0.25;
+    border-radius: 50%;
+}
+
+@media (min-width: 1200px) {
+    #greetingPic>img {
+        left: 5vw;
+    }
+}
+
+@media (min-width: 1600px) {
+    #greetingPic>img {
+        left: 10vw;
+    }
+}
+
+@media (min-width: 2000px) {
+    #greetingPic>img {
+        left: 20vw;
+    }
+}
+
+.contactLogo {
+    max-width: 2rem;
+    max-height: 2rem;
+    transition: transform 1s ease-in-out;
+    border-radius: 50%;
+}
+
+.contactLogoSquare {
+    max-width: 2rem;
+    max-height: 2rem;
+    transition: transform 1s ease-in-out;
+    border-radius: 10%;
+}
+
+.contactLogo:hover,
+.contactLogo:focus,
+.contactLogoSquare:hover,
+.contactLogoSquare:focus {
+    transform: scale(-1, 1) scale(1);
+    background-color: lime;
+    opacity: 1;
+}
+
+#emailIcon>img {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 0.75rem;
+    opacity: 0.5;
+    transition: transform 1s ease-in-out;
+}
+
+#emailIcon>img:hover,
+#emailIcon>img:focus {
+    transform: scale(-1, 1) scale(1);
+    background-color: lime;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+#emailIcon>span {
+    font-size: 2rem;
+    padding: 1rem;
+    color: white;
+    font-family: Menlo Regular;
+}
+
+@media (max-width: 400px) {
+    #emailIcon>span {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
+}
+
+.form-item>input {
+    background-color: transparent;
+    color: white;
+    /* text-shadow: 1px 1px black; */
+    border-radius: 0.25rem;
+    border: .125rem solid black;
+    margin-bottom: 0.5rem;
+}
+
+.form-item>input::placeholder,
+.form-item>textarea::placeholder {
+    color: gray;
+}
+
+.form-item>textarea {
+    background-color: rgb(50, 50, 50);
+    color: white;
+    text-shadow: 1px 1px black;
+    border-radius: 0.25rem;
+    margin-bottom: 0.5rem;
+    border: .125rem solid black;
+    resize: none;
+}
+
+.form-item>label {
+    align-self: center;
+    display: flex;
+    justify-content: start;
+    color: cornflowerblue;
+    font-family: Menlo Regular;
+}
+
+input {
+    background-color: rgb(50, 50, 50) !important;
+    align-self: center;
+    display: flex;
+    justify-content: start;
+}
+
+#emailButton {
+    opacity: 0;
+    margin: 0 1px;
+    width: fit-content;
+    border-radius: 2px;
+    border-color: rgb(50, 50, 50);
+    background-color: rgb(50, 50, 50);
+    color: lime;
+    transition: all 0.25s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+#emailButton.show {
+    opacity: 1 !important;
+}
+
+#emailButton:hover {
+    background-color: black;
+    border-color: lime;
+    color: lime;
+    opacity: 1 !important;
+}
+
+.buttonEffect {
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+#buttonResume {
+    z-index: 10;
+}
+
+#googleMap {
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    margin: 3rem auto;
+}
+
+#googleMap>iframe {
+    max-width: 80vw;
+    opacity: 0.9;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
