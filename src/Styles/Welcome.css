@@ -52,7 +52,7 @@
 }
 
 @media (max-width:575px) {
-    #CarouselGDPs>.carousel-item{
+    #carouselGDPs>.carousel-item{
         max-width: 40rem;
         height: 9rem;
     }
@@ -62,7 +62,7 @@
 }
 
 @media (max-width:350px) {
-    #CarouselGDPs>.carousel-item{
+    #carouselGDPs>.carousel-item{
         max-width: 40rem;
         height: 12.5rem;
     }

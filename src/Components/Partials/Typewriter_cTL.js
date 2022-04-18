@@ -32,7 +32,7 @@ const cTLH2Style = {
 export const CodeTrackLift = () => {
   return (
         <section id="cTLTypewriterSection" className='mt-5' style={cTLSectionStyle}>
-            <figure id='cTLTypewriter' className="mx-auto" style={cTLFigureStyle}>
+            <figure id='cTLTypewriter' className="mx-auto mt-5" style={cTLFigureStyle}>
                 <h2 id="cTLTypewriter1" style={cTLH2Style}>
                     <span style={{color:'darkorchid'}}>while</span> (
                     <span style={{color:'cornflowerblue'}}>alive</span>) {'{'}

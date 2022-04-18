@@ -1,10 +1,10 @@
 import React from 'react';
+import { initCBPLogoWelcome } from './Partials/cBPLogo';
 import { StationInLife } from './Partials/Typewriter_sIL';
 import { WelcomeMain } from './Partials/WelcomeMain';
 import '../Styles/Cards.css';
 import '../Styles/Welcome.css';
 import '../Styles/WelcomeAnimations.css';
-import ScrollMagic from 'scrollmagic';
 
 const welcomeStyle = {
     display: 'block',
@@ -20,17 +20,19 @@ const welcomeStyle = {
 export const Welcome = () => {
 
     const [content, setContent] = React.useState('');
-    const injectContent = () => {
-        setContent(<WelcomeMain />);
-    }
-    setTimeout(injectContent, 3000);
-    setTimeout(initCBPLogo, 0);
-
     const [background, setBackground] = React.useState('');
+    
     const welcomeBackground = () => {
         const newBackground = 'vesselBackground';
         setBackground(newBackground);
     }
+    
+    const injectContent = () => {
+        setContent(<WelcomeMain />);
+    }
+
+    initCBPLogoWelcome()
+    setTimeout(injectContent, 3000);
     setTimeout(welcomeBackground, 3000);
 
     return (
@@ -41,9 +43,9 @@ export const Welcome = () => {
                 className='container-fluid animationBorder'
                 style={welcomeStyle}>
                 <figure style={{padding:'0 1rem 0 1rem'}}>
-                    <h1 className='animationDropDown textShadowBlack'><span className='animationTurnOpaque'>Welcome to</span></h1>
-                    <h1 className='animationSlideFromLeft textShadowBlack'><span>code</span><span>By</span><span
-                            className='animationExpand'>Pe</span><span className='animationTurnGreen'>te</span></h1>
+                    <div className='fs-1 animationDropDown textShadowBlack'><span className='animationTurnOpaque'>Welcome to</span></div>
+                    <div className='fs-1 animationSlideFromLeft textShadowBlack'><span>code</span><span>By</span><span
+                            className='animationExpand'>Pe</span><span className='animationTurnGreen'>te</span></div>
                 </figure>
             </div>
 
@@ -53,15 +55,4 @@ export const Welcome = () => {
 
        </div>
     )
-}
-
-const initCBPLogo = () => {
-    const navbarCBPController = new ScrollMagic.Controller();
-    const navbarCBP = new ScrollMagic.Scene({
-            triggerElement: '#welcome',
-            offset: -100,
-            duration: 800
-        })
-        .setClassToggle('#navbarCBP', 'd-none')
-        .addTo(navbarCBPController);
 }

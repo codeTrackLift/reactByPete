@@ -97,7 +97,7 @@ export const WelcomeMain = () => {
                 </div>
 
                 <div className="col-sm-4 myArticlesWelcome container-fluid my-auto" style={myArticlesStyle}>
-                    <div className="row justify-content-evenly">
+                    <div className="row justify-content-evenly my-5">
                         <img src={html5_logo} className='col-sm-2 img-fluid img-round' alt="HTML5 Logo." style={imgRoundStyle} />
                         <img src={css3_logo} className='col-sm-2 img-fluid img-round' alt="CSS3 Logo." style={imgRoundStyle} />
                         <img src={javascript_logo} className='col-sm-2 img-fluid img-round' alt="JavaScript Logo." style={imgRoundStyle} />
@@ -109,7 +109,7 @@ export const WelcomeMain = () => {
             <Row style={rowStyle}>
                 <div className="col-sm-4 myArticlesWelcome container-fluid my-auto" style={myArticlesStyle}>
                     <h1 className="text-center mb-4 menloRegular textShadowBlack">Stack</h1>
-                    <div className="row justify-content-evenly">
+                    <div className="row justify-content-evenly my-5">
                         <img src={git_logo} className='py-3 col-sm-2 img-fluid img-square' style={imgSquareStyle} alt="Git Logo." />
                         <img src={vscode_logo} className='py-3 col-sm-2 img-fluid img-square' style={imgSquareStyle} alt="Visual Studio Code Logo." />
                         <img src={bootstrap_logo} className='py-3 col-sm-2 img-fluid img-square' style={imgSquareStyle} alt="Bootstrap Logo." />
@@ -134,7 +134,7 @@ export const WelcomeMain = () => {
 
             <Container fluid>
                 <div className="myArticlesWelcome container-fluid text-center mt-4" style={myArticlesStyle}>
-                    <img className='img-fluid bg-black rounded m-auto' src={mern_logo} style={{width:'25rem'}} alt="Mongo DB Express NodeJS ReactJS technology stack." />
+                    <img className='img-fluid bg-black rounded m-auto mt-4' src={mern_logo} style={{width:'25rem'}} alt="Mongo DB Express NodeJS ReactJS technology stack." />
                 </div>
             </Container>
 
