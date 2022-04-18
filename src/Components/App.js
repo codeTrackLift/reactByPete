@@ -13,6 +13,8 @@ import { Resume } from './Resume';
 import { Contact } from './Contact';
 import pharma2CodeLogo from '../Images/pharma2code_icon.gif';
 
+let isWelcome = null;
+
 export default function App() {
 
     const [expanded, setExpanded] = React.useState(false);
@@ -35,8 +37,10 @@ export default function App() {
                         <img id='pharma2CodeLogo' src={pharma2CodeLogo} alt='Pill inside angle bracket logo' />
                     </Navbar.Toggle>
                     <h3 id='navbarCBP' 
-                        className="d-block d-sm-none" 
-                        style={{fontStyle:'italic',letterSpacing:'2vw'}}>
+                        style={{fontStyle:'italic',letterSpacing:'2vw'}}
+                        // className="d-block d-sm-none d-none" 
+                        className={isWelcome ? 'd-block d-sm-none d-none' : 'd-none'}
+                    >
                         <span style={{color:'white'}}>code</span>
                         <span style={{color:'#00857c'}}>By</span>
                         <span style={{color:'lime'}}>Pete</span>
@@ -69,6 +73,9 @@ export default function App() {
 
 function ScrollToTop() {
     const { pathname } = useLocation();
+    if(pathname === '/') {
+        isWelcome = true;
+    }
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [pathname]);

@@ -10,12 +10,3 @@ export const initCBPLogoWelcome = () => {
         .setClassToggle('#navbarCBP', 'd-none')
         .addTo(navbarCBPController);
 }
-
-export const initCBPLogoApp = () => {
-    const navbarCBPController = new ScrollMagic.Controller();
-    const navbarCBP = new ScrollMagic.Scene({
-            triggerElement: '#App',
-        })
-        .setClassToggle('#navbarCBP', 'd-none')
-        .addTo(navbarCBPController);
-}

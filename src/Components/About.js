@@ -1,6 +1,5 @@
 import React from 'react';
 import ScrollMagic from 'scrollmagic';
-import { initCBPLogoApp } from './Partials/cBPLogo';
 import { CodeTrackLift } from './Partials/Typewriter_cTL';
 import { CarouselRelent } from './Partials/CarouselRelent';
 import { Footer } from './Partials/Footer';
@@ -57,8 +56,6 @@ const imageRectStyle = {
 }
 
 export const About = () => {
-
-    initCBPLogoApp();
 
     setTimeout(initScrollMagicAbout, 0);
 
