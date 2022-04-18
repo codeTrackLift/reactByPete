@@ -12,9 +12,11 @@ export default function Footer() {
                     className='d-none d-sm-inline'
                     style={{height:'2rem',padding:'0 0.25rem'}}
                     alt="codeByPete Logo."/>
-                <span style={{color:"white"}}> code</span>
-                <span style={{color:"#00857c"}}>By</span>
-                <span style={{color:"lime"}}>Pete</span>
+                <span className='fst-italic'>
+                    <span style={{color:"white"}}> code</span>
+                    <span style={{color:"#00857c"}}>By</span>
+                    <span style={{color:"lime"}}>Pete</span>
+                </span>
             </p>
             <div>
                 <a href="https://github.com/codeTrackLift/reactByPete" 
