@@ -7,16 +7,14 @@ export default function Footer() {
 
     return (
         <footer>
-            <p>Copyright © {currentYear}
-                <a href="https://www.codebypete.com" 
-                    target="_blank" rel='noreferrer'>
-                    <img src="https://codetracklift.github.io/codeTrackLift/logos/pharma2code_icon.gif" 
-                        style={{height:'2rem',padding:'0 0.25rem'}}
-                        alt="codeByPete Logo."/>
-                    <span style={{color:"white"}}>code</span>
-                    <span style={{color:"#00857c"}}>By</span>
-                    <span style={{color:"lime"}}>Pete</span>
-                </a>
+            <p>Copyright © {currentYear} 
+                <img src="https://codetracklift.github.io/codeTrackLift/logos/pharma2code_icon.gif" 
+                    className='d-none d-sm-inline'
+                    style={{height:'2rem',padding:'0 0.25rem'}}
+                    alt="codeByPete Logo."/>
+                <span style={{color:"white"}}> code</span>
+                <span style={{color:"#00857c"}}>By</span>
+                <span style={{color:"lime"}}>Pete</span>
             </p>
             <div>
                 <a href="https://github.com/codeTrackLift/reactByPete" 
