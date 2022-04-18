@@ -48,13 +48,14 @@ export default function App() {
                         onClick={() => setExpanded(expanded ? false : 'expanded')}>
                         <img id='pharma2CodeLogo' src={pharma2CodeLogo} alt='Pill inside angle bracket logo' />
                     </Navbar.Toggle>
-                    <h3 id='navbarCBP' 
-                        style={{fontStyle:'italic',letterSpacing:'2vw'}}
-                        className={() => setIsWelcome(isWelcome ? 'd-block d-sm-none d-none' : 'd-block d-sm-none')}
+                    <h3 style={{fontStyle:'italic',letterSpacing:'2vw'}}
+                        className='d-block d-sm-none'
                     >
-                        <span style={{color:'white'}}>code</span>
-                        <span style={{color:'#00857c'}}>By</span>
-                        <span style={{color:'lime'}}>Pete</span>
+                        <span id='navbarCBP' className={() => setIsWelcome(isWelcome ? 'd-none' : null)}>
+                            <span style={{color:'white'}}>code</span>
+                            <span style={{color:'#00857c'}}>By</span>
+                            <span style={{color:'lime'}}>Pete</span>
+                        </span>
                     </h3>
                     <Navbar.Collapse className="collapse navbar-collapse" id="navbarTogglerDemo02">
                         <Nav className="navbar-nav me-auto mb-2 mb-lg-0">
