@@ -13,11 +13,23 @@ import { Resume } from './Resume';
 import { Contact } from './Contact';
 import pharma2CodeLogo from '../Images/pharma2code_icon.gif';
 
-let isWelcome = null;
 
 export default function App() {
-
+    
     const [expanded, setExpanded] = React.useState(false);
+    const [isWelcome, setIsWelcome] = React.useState(true);
+
+    const ScrollToTop = () => {
+        const { pathname } = useLocation();
+        if(pathname.length === 1) {
+            setIsWelcome(true);
+        } 
+        setIsWelcome(false);
+        useEffect(() => {
+            window.scrollTo(0, 0);
+        }, [pathname]);
+        return null;
+    }
 
     return (
         <BrowserRouter>
@@ -38,7 +50,7 @@ export default function App() {
                     </Navbar.Toggle>
                     <h3 id='navbarCBP' 
                         style={{fontStyle:'italic',letterSpacing:'2vw'}}
-                        className={isWelcome ? 'd-block d-sm-none d-none' : 'd-block d-sm-none'}
+                        className={() => setIsWelcome(isWelcome ? 'd-block d-sm-none d-none' : 'd-block d-sm-none')}
                     >
                         <span style={{color:'white'}}>code</span>
                         <span style={{color:'#00857c'}}>By</span>
@@ -68,15 +80,4 @@ export default function App() {
             </div>
         </BrowserRouter>
     );
-}
-
-function ScrollToTop() {
-    const { pathname } = useLocation();
-    if(pathname === '/') {
-        isWelcome = true;
-    }
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, [pathname]);
-    return null;
 }
