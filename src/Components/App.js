@@ -1,6 +1,7 @@
 import React from 'react';
+import { useEffect} from 'react';
 import { Nav, Navbar } from 'react-bootstrap'
-import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
+import { BrowserRouter, Routes, Route, NavLink, useLocation } from "react-router-dom";
 import '../Styles/App.css';
 import '../Styles/Typography.css';
 import '../Styles/Navbar.css';
@@ -12,7 +13,7 @@ import { Resume } from './Resume';
 import { Contact } from './Contact';
 import pharma2CodeLogo from '../Images/pharma2code_icon.gif';
 
-function App() {
+export default function App() {
 
     const [expanded, setExpanded] = React.useState(false);
 
@@ -52,6 +53,7 @@ function App() {
                     </Navbar.Collapse>
                 </Navbar>
                 
+                <ScrollToTop />
                 <Routes>
                     <Route path="*" element={<Welcome/>} />
                     <Route path="/About" element={<About/>} />
@@ -65,4 +67,10 @@ function App() {
     );
 }
 
-export default App;
+function ScrollToTop() {
+    const { pathname } = useLocation();
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
+    return null;
+}

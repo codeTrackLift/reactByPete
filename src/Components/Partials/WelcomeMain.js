@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollMagic from 'scrollmagic';
 import { CarouselGDPs} from './CarouselGDPs';
 import { Footer } from './Footer';
 import { Container, Row } from 'react-bootstrap';
@@ -69,13 +70,16 @@ const imgSquareStyle = {
 }
 
 export const WelcomeMain = () => {
+
+    setTimeout(initScrollMagicWelcome, 0);
+
     return (
         <section id="mySection" style={mySectionStyle}>
            
             <Row className='text-center' style={rowStyle}>
             <h5 className='menloRegular textShadowBlack textSilver'><span className='text-white'>Join me</span>, on <a href="../pages/blog.html">myCodingJourney</a>...</h5>
             </Row>
-
+            
             <Row style={rowStyle}>
                 <div id='welcomeCard1' className="card col-sm-4" style={cardStyle}>
                     <iframe className='container-fluid ratio ratio-1x1 pt-4' src="https://youtube.com/embed/L2MLboXUkUA" frameBorder="0" allowFullScreen title='Portfolio intro video'>
@@ -153,4 +157,36 @@ export const WelcomeMain = () => {
 
         </section>
     );
+}
+
+const initScrollMagicWelcome = () => {
+    const welcomeCard1Controller = new ScrollMagic.Controller();
+    const welcomeCard1 = new ScrollMagic.Scene({
+            triggerElement: '#welcomeCard1',
+        })
+        .setClassToggle('#welcomeCard1', 'shift')
+        .addTo(welcomeCard1Controller);
+
+    const welcomeCard2Controller = new ScrollMagic.Controller();
+    const welcomeCard2 = new ScrollMagic.Scene({
+            triggerElement: '#welcomeCard2',
+        })
+        .setClassToggle('#welcomeCard2', 'shift')
+        .addTo(welcomeCard2Controller);
+
+    const githubContributionsController = new ScrollMagic.Controller();
+    const githubContributions = new ScrollMagic.Scene({
+            triggerElement: '#githubContributions',
+            offset: -200
+        })
+        .setClassToggle('#githubContributions', 'show')
+        .addTo(githubContributionsController);
+
+    const buttonContactController = new ScrollMagic.Controller();
+    const buttonContact = new ScrollMagic.Scene({
+            triggerElement: '#buttonContact',
+            offset: -200
+        })
+        .setClassToggle('#buttonContact', 'show')
+        .addTo(buttonContactController);
 }

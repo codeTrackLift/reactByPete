@@ -24,7 +24,6 @@ export const Welcome = () => {
         setContent(<WelcomeMain />);
     }
     setTimeout(injectContent, 3000);
-    setTimeout(initScrollMagicWelcome, 3100);
     setTimeout(initCBPLogo, 0);
 
     const [background, setBackground] = React.useState('');
@@ -65,36 +64,4 @@ const initCBPLogo = () => {
         })
         .setClassToggle('#navbarCBP', 'd-none')
         .addTo(navbarCBPController);
-}
-
-const initScrollMagicWelcome = () => {
-    const welcomeCard1Controller = new ScrollMagic.Controller();
-    const welcomeCard1 = new ScrollMagic.Scene({
-            triggerElement: '#welcomeCard1',
-        })
-        .setClassToggle('#welcomeCard1', 'shift')
-        .addTo(welcomeCard1Controller);
-
-    const welcomeCard2Controller = new ScrollMagic.Controller();
-    const welcomeCard2 = new ScrollMagic.Scene({
-            triggerElement: '#welcomeCard2',
-        })
-        .setClassToggle('#welcomeCard2', 'shift')
-        .addTo(welcomeCard2Controller);
-
-    const githubContributionsController = new ScrollMagic.Controller();
-    const githubContributions = new ScrollMagic.Scene({
-            triggerElement: '#githubContributions',
-            offset: -200
-        })
-        .setClassToggle('#githubContributions', 'show')
-        .addTo(githubContributionsController);
-
-    const buttonContactController = new ScrollMagic.Controller();
-    const buttonContact = new ScrollMagic.Scene({
-            triggerElement: '#buttonContact',
-            offset: -200
-        })
-        .setClassToggle('#buttonContact', 'show')
-        .addTo(buttonContactController);
 }
