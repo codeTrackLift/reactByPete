@@ -119,8 +119,7 @@ export const About = () => {
                 </div>
                 <div className="row">
                     <p className="col-sm-7">I have slid down <span className='textSilver'>mountains</span> strapped to a waxy plank, and <span style={{color:'chocolate'}}>driven</span> in circles as fast as I can.</p>
-                    <p className="col-sm-4">I may have also married a 
-                        <a href="https://en.wikipedia.org/wiki/Sith" target="_blank" rel='noreferrer'>Sith</a> Lord!<br/>
+                    <p className="col-sm-4">I may have also married a <a href="https://en.wikipedia.org/wiki/Sith" target="_blank" rel='noreferrer'> Sith</a> Lord!<br/>
                         <span style={{color:'darkorchid'}}>'This is the way</span>.
                         <span style={{color:'darkorchid'}}>'</span>
                     </p>
