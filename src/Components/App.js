@@ -38,8 +38,7 @@ export default function App() {
                     </Navbar.Toggle>
                     <h3 id='navbarCBP' 
                         style={{fontStyle:'italic',letterSpacing:'2vw'}}
-                        // className="d-block d-sm-none d-none" 
-                        className={isWelcome ? 'd-block d-sm-none d-none' : 'd-none'}
+                        className={isWelcome ? 'd-block d-sm-none d-none' : 'd-block d-sm-none'}
                     >
                         <span style={{color:'white'}}>code</span>
                         <span style={{color:'#00857c'}}>By</span>
