@@ -1,96 +1,51 @@
-/* typeWriter codeTrackLift below */
-#typeWriterSection_cTL>#typeWriter {
-    margin: 0 auto;
-    width: fit-content;
-    padding: 5vh 0;
-    background-color: rgb(50, 50, 50);
-    display: flex;
-    flex-direction: column;
-}
-
-#typeWriterSection_cTL {
-    margin-top: 2rem !important;
-    background-color: rgb(50, 50, 50);
-    width: 100vw;
-    max-width: 100vw;
-    overflow-x: hidden;
-    margin-bottom: -3rem;
-}
-
+/* cTLTypewriter codeTrackLift below */
 @media (max-width: 635px) {
-    #typeWriterSection_cTL>#typeWriter>h2 {
+    h2 {
         font-size: 4vw;
     }
 
-    #typeWriterSection_cTL>#typeWriter>h2 {
+    h2 {
         font-size: 1.5rem !important;
         letter-spacing: normal !important;
     }
 }
 
 @media (max-width: 580px) {
-    #typeWriterSection_cTL {
+    #cTLTypewriterSection {
         margin-top: 0 !important;
     }
 }
 
 @media (max-width: 500px) {
-    #typeWriterSection_cTL>#typeWriter>h2 {
+    h2 {
         font-size: 1.25rem !important;
         letter-spacing: normal !important;
     }
 }
 
 @media (max-width: 350px) {
-    #typeWriterSection_cTL>#typeWriter>h2 {
+    h2 {
         font-size: 1rem !important;
         letter-spacing: normal !important;
     }
 }
 
 @media (max-height: 500px) {
-    #typeWriterSection_cTL {
+    #cTLTypewriterSection {
         margin-top: -5vh;
     }
 }
 
-/* @keyframes animationFadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    56.125% {
-        opacity: 0;
-        transform: scale(0);
-    }
-
-    59.125% {
-        transform: scale(1);
-        opacity: 1;
-    }
-} */
-
-#typeWriterSection_cTL>#typeWriter>h2 {
-    position: relative;
-    width: max-content;
-    font-weight: normal;
-    font-family: Menlo Regular;
-    font-size: 1.75rem;
-    letter-spacing: 0.125rem;
-    color: silver;
-    text-shadow: 1px 1px black;
-}
-
-#typeWriterSection_cTL>#typeWriter>#typeWriter1:before,
-#typeWriterSection_cTL>#typeWriter>#typeWriter1:after,
-#typeWriterSection_cTL>#typeWriter>#typeWriter2:before,
-#typeWriterSection_cTL>#typeWriter>#typeWriter2:after,
-#typeWriterSection_cTL>#typeWriter>#typeWriter3:before,
-#typeWriterSection_cTL>#typeWriter>#typeWriter3:after,
-#typeWriterSection_cTL>#typeWriter>#typeWriter4:before,
-#typeWriterSection_cTL>#typeWriter>#typeWriter4:after,
-#typeWriterSection_cTL>#typeWriter>#typeWriter5:before,
-#typeWriterSection_cTL>#typeWriter>#typeWriter5:after {
+#cTLTypewriter1:before,
+#cTLTypewriter1:after,
+#cTLTypewriter2:before,
+#cTLTypewriter2:after,
+#cTLTypewriter3:before,
+#cTLTypewriter3:after,
+#cTLTypewriter4:before,
+#cTLTypewriter4:after,
+#cTLTypewriter5:before,
+#cTLTypewriter5:after {
     content: "";
     position: absolute;
     top: 0;
@@ -98,26 +53,26 @@
     height: 100%;
 }
 
-#typeWriterSection_cTL>#typeWriter>#typeWriter1::before {
+#cTLTypewriter1::before {
     width: 100vw;
     background: rgb(50, 50, 50);
-    animation: write 1s steps(15) 0.5s forwards;
+    animation: cTLWrite 1s steps(15) 0.5s forwards;
 }
 
-#typeWriterSection_cTL>#typeWriter>#typeWriter1::after {
+#cTLTypewriter1::after {
     opacity: 1;
     width: 0.15em;
     background: rgb(50, 50, 50);
-    animation: write 1s steps(15) 0.5s forwards, blink 0.75s reverse steps(15) 2.25;
+    animation: cTLWrite 1s steps(15) 0.5s forwards, cTLBlink 0.75s reverse steps(15) 2.25;
 }
 
-@keyframes write {
+@keyframes cTLWrite {
     to {
         left: 100%;
     }
 }
 
-@keyframes blink {
+@keyframes cTLBlink {
     0% {
         opacity: 0;
         background: white;
@@ -143,62 +98,62 @@
     }
 }
 
-#typeWriterSection_cTL>#typeWriter>#typeWriter2::before {
+#cTLTypewriter2::before {
     width: 100vw;
     background: rgb(50, 50, 50);
-    animation: write 0.5s steps(9) 0.5s forwards;
+    animation: cTLWrite 0.5s steps(9) 0.5s forwards;
     animation-delay: 2s;
 }
 
-#typeWriterSection_cTL>#typeWriter>#typeWriter2::after {
+#cTLTypewriter2::after {
     opacity: 1;
     width: 0.15em;
     background: rgb(50, 50, 50);
-    animation: write 0.5s steps(9) 0.5s forwards, blink 0.75s reverse steps(9) 1.25;
+    animation: cTLWrite 0.5s steps(9) 0.5s forwards, cTLBlink 0.75s reverse steps(9) 1.25;
     animation-delay: 2s;
 }
 
-#typeWriterSection_cTL>#typeWriter>#typeWriter3::before {
+#cTLTypewriter3::before {
     width: 100vw;
     background: rgb(50, 50, 50);
-    animation: write 1s steps(16) 0.5s forwards;
+    animation: cTLWrite 1s steps(16) 0.5s forwards;
     animation-delay: 3s;
 }
 
-#typeWriterSection_cTL>#typeWriter>#typeWriter3::after {
+#cTLTypewriter3::after {
     opacity: 1;
     width: 0.15em;
     background: rgb(50, 50, 50);
-    animation: write 1s steps(16) 0.5s forwards, blink 0.75s reverse steps(16) 2;
+    animation: cTLWrite 1s steps(16) 0.5s forwards, cTLBlink 0.75s reverse steps(16) 2;
     animation-delay: 3s;
 }
 
-#typeWriterSection_cTL>#typeWriter>#typeWriter4::before {
+#cTLTypewriter4::before {
     width: 100vw;
     background: rgb(50, 50, 50);
-    animation: write 1s steps(16) 0.5s forwards;
+    animation: cTLWrite 1s steps(16) 0.5s forwards;
     animation-delay: 4.5s;
 }
 
-#typeWriterSection_cTL>#typeWriter>#typeWriter4::after {
+#cTLTypewriter4::after {
     opacity: 1;
     width: 0.15em;
     background: rgb(50, 50, 50);
-    animation: write 1s steps(16) 0.5s forwards, blink 0.75s reverse steps(16) 2;
+    animation: cTLWrite 1s steps(16) 0.5s forwards, cTLBlink 0.75s reverse steps(16) 2;
     animation-delay: 4.5s;
 }
 
-#typeWriterSection_cTL>#typeWriter>#typeWriter5::before {
+#cTLTypewriter5::before {
     width: 100vw;
     background: rgb(50, 50, 50);
-    animation: write 0.25s steps(1) 0.5s forwards;
+    animation: cTLWrite 0.25s steps(1) 0.5s forwards;
     animation-delay: 5.75s;
 }
 
-#typeWriterSection_cTL>#typeWriter>#typeWriter5::after {
+#cTLTypewriter5::after {
     opacity: 1;
     width: 0.15em;
     background: rgb(50, 50, 50);
-    animation: write 0.25s steps(1) 0.5s forwards, blink 0.75s reverse steps(1) infinite;
+    animation: cTLWrite 0.25s steps(1) 0.5s forwards, cTLBlink 0.75s reverse steps(1) infinite;
     animation-delay: 5.75s;
 }

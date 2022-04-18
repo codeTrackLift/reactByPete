@@ -1,5 +1,5 @@
 import React from 'react';
-import { StationInLife } from './Partials/StationInLife';
+import { StationInLife } from './Partials/Typewriter_sIL';
 import { WelcomeMain } from './Partials/WelcomeMain';
 import '../Styles/Cards.css';
 import '../Styles/Welcome.css';
@@ -24,7 +24,7 @@ export const Welcome = () => {
         setContent(<WelcomeMain />);
     }
     setTimeout(injectContent, 3000);
-    setTimeout(initScrollMagic, 3100);
+    setTimeout(initScrollMagicWelcome, 3100);
     setTimeout(initCBPLogo, 0);
 
     const [background, setBackground] = React.useState('');
@@ -57,8 +57,8 @@ export const Welcome = () => {
 }
 
 const initCBPLogo = () => {
-    var navbarCBPController = new ScrollMagic.Controller();
-    var navbarCBP = new ScrollMagic.Scene({
+    const navbarCBPController = new ScrollMagic.Controller();
+    const navbarCBP = new ScrollMagic.Scene({
             triggerElement: '#welcome',
             offset: -100,
             duration: 800
@@ -67,31 +67,31 @@ const initCBPLogo = () => {
         .addTo(navbarCBPController);
 }
 
-const initScrollMagic = () => {
-    var welcomeCard1Controller = new ScrollMagic.Controller();
-    var welcomeCard1 = new ScrollMagic.Scene({
+const initScrollMagicWelcome = () => {
+    const welcomeCard1Controller = new ScrollMagic.Controller();
+    const welcomeCard1 = new ScrollMagic.Scene({
             triggerElement: '#welcomeCard1',
         })
         .setClassToggle('#welcomeCard1', 'shift')
         .addTo(welcomeCard1Controller);
 
-    var welcomeCard2Controller = new ScrollMagic.Controller();
-    var welcomeCard2 = new ScrollMagic.Scene({
+    const welcomeCard2Controller = new ScrollMagic.Controller();
+    const welcomeCard2 = new ScrollMagic.Scene({
             triggerElement: '#welcomeCard2',
         })
         .setClassToggle('#welcomeCard2', 'shift')
         .addTo(welcomeCard2Controller);
 
-    var githubContributionsController = new ScrollMagic.Controller();
-    var githubContributions = new ScrollMagic.Scene({
+    const githubContributionsController = new ScrollMagic.Controller();
+    const githubContributions = new ScrollMagic.Scene({
             triggerElement: '#githubContributions',
             offset: -200
         })
         .setClassToggle('#githubContributions', 'show')
         .addTo(githubContributionsController);
 
-    var buttonContactController = new ScrollMagic.Controller();
-    var buttonContact = new ScrollMagic.Scene({
+    const buttonContactController = new ScrollMagic.Controller();
+    const buttonContact = new ScrollMagic.Scene({
             triggerElement: '#buttonContact',
             offset: -200
         })

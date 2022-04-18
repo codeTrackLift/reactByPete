@@ -19,13 +19,29 @@ function App() {
     return (
         <BrowserRouter>
             <div id='App'>
-                <Navbar id='navbar' expanded={expanded} expand='sm' className="navbar navbar-expand-sm navbar-dark bg-transparent sticky-top">
-                    <Navbar.Toggle className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" onClick={() => setExpanded(expanded ? false : 'expanded')}>
+                <Navbar id='navbar' 
+                    expanded={expanded} 
+                    expand='sm' 
+                    className="navbar navbar-expand-sm navbar-dark bg-transparent sticky-top">
+                    <Navbar.Toggle className="navbar-toggler" 
+                        type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#navbarTogglerDemo02" 
+                        aria-controls="navbarTogglerDemo02" 
+                        aria-expanded="false" 
+                        aria-label="Toggle navigation" 
+                        onClick={() => setExpanded(expanded ? false : 'expanded')}>
                         <img id='pharma2CodeLogo' src={pharma2CodeLogo} alt='Pill inside angle bracket logo' />
                     </Navbar.Toggle>
-                    <h3 id='navbarCBP' className="d-block d-sm-none" style={{fontStyle:'italic',letterSpacing:'2vw'}}><span style={{color:'white'}}>code</span><span style={{color:'#00857c'}}>By</span><span style={{color:'lime'}}>Pete</span></h3>
+                    <h3 id='navbarCBP' 
+                        className="d-block d-sm-none" 
+                        style={{fontStyle:'italic',letterSpacing:'2vw'}}>
+                        <span style={{color:'white'}}>code</span>
+                        <span style={{color:'#00857c'}}>By</span>
+                        <span style={{color:'lime'}}>Pete</span>
+                    </h3>
                     <Navbar.Collapse className="collapse navbar-collapse" id="navbarTogglerDemo02">
-                        <Nav className="navbar-nav me-auto mb-2 mb-lg-0" defaultActiveKey={1}>
+                        <Nav className="navbar-nav me-auto mb-2 mb-lg-0">
                             <Nav.Link eventKey={1} onClick={() => setExpanded(false)} href='*' as={NavLink} to='/'>Welcome</Nav.Link>
                             <Nav.Link eventKey={2} onClick={() => setExpanded(false)} href='/About' as={NavLink} to='/About'>About</Nav.Link>
                             <Nav.Link eventKey={3} onClick={() => setExpanded(false)} href='/Blog' as={NavLink} to='/Blog'>Blog</Nav.Link>

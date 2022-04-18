@@ -1,8 +1,10 @@
 import React from 'react';
+import ScrollMagic from 'scrollmagic';
+import { CodeTrackLift } from './Partials/Typewriter_cTL';
+import { CarouselRelent } from './Partials/CarouselRelent';
 import { Footer } from './Partials/Footer';
-// import '../Styles/About.css';
+import '../Styles/About.css';
 import '../Styles/Cards.css';
-import '../Styles/Typewriter_cTL.css';
 import profilepic from '../Images/about/profilepic.gif';
 import crushItApple from '../Images/about/crushItApple.jpg';
 import githubContributions_100Days from '../Images/about/githubContributions_100Days.jpg';
@@ -13,32 +15,46 @@ import peteSnowboardingMountain from '../Images/about/peteSnowboardingMountain.j
 import peteSTi from '../Images/about/peteSTi.jpg';
 import peteTheForce from '../Images/about/peteTheForce.png';
 
+const mainContentStyle = {
+    backgroundSize: 'cover',
+    backgroundAttachment: 'fixed',
+    backgroundPosition: 'center',
+    backgroundColor: 'rgb(50, 50, 50)',
+    alignItems: 'center'
+}
+
+const githubContributions100Style = {
+    zIndex: 1,
+    opacity: 1 + ' !important',
+    transform: 'scale(1.05)'
+}
+
+const myArticlesStyle = {
+    margin: '2rem auto',
+    padding: '1rem',
+    border: '1px solid black',
+    borderRadius: '0.25rem',
+    backgroundColor: 'black',
+    width: '90vw',
+    maxWidth: '960px',
+    lineHeight: 1.6,
+    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px'
+}
+
 export const About = () => {
 
-    return (
-        <div id="mainContent">
+    setTimeout(initScrollMagicAbout, 0);
 
-            <section id="typeWriterSection_cTL">
-                <figure id='typeWriter' className="mx-auto">
-                    <h2 id="typeWriter1"><span style={{color:'darkorchid'}}>while</span> (<span
-                            style={{color:'cornflowerblue'}}>alive</span>) {'{'}</h2>
-                    <h2 id="typeWriter2"><span style={{color:'rgb(50,50,50)',textShadow:'none'}}>__</span><span
-                            style={{color:'chocolate'}}>code</span>()<span style={{color:'gray'}}>;</span></h2>
-                    <h2 id="typeWriter3"><span style={{color:'rgb(50,50,50)',textShadow:'none'}}>__</span><span
-                            style={{color:'chocolate'}}>track</span>(<span style={{color:'cornflowerblue'}}>macros</span>)<span
-                            style={{color:'gray'}}>;</span></h2>
-                    <h2 id="typeWriter4"><span style={{color:'rgb(50,50,50)',textShadow:'none'}}>__</span><span
-                            style={{color:'chocolate'}}>lift</span>(<span style={{color:'cornflowerblue'}}>weights</span>)<span
-                            style={{color:'gray'}}>;</span></h2>
-                    <h2 id="typeWriter5">{'}'}</h2>
-                </figure>
-            </section>
+    return (
+        <div id="mainContentAbout" style={mainContentStyle}>
+
+            <CodeTrackLift />
 
             <div id="greetingPic">
                 <img src={profilepic} className='img-fluid bg-transparent' alt="Pete's wearing a suit."/>
             </div>
 
-            <div id="myIntro" className="myArticles container-fluid mt-5">
+            <div id="myIntro" className="myArticles container-fluid mt-5" style={myArticlesStyle}>
                 <h2>Hello,</h2>
                 <p>My name is <span className="menloRegular" style={{color:'chocolate'}}>Pete</span> and I <span>grew up in the
                         90s</span>. I fondly remember multi-sided die, Bulletin Board Systems, Sierra games, and AOL CDs.
@@ -58,13 +74,13 @@ export const About = () => {
                 </div>
             </div>
 
-            <div id='githubContributions' className="container-fluid text-center">
+            <div id='githubContributions' className="container-fluid text-center" style={githubContributions100Style}>
                 <a href="https://github.com/codeTrackLift" target="_blank" rel='noreferrer'>
                     <img src={githubContributions_100Days} alt="GitHub contribution"/>
                 </a>
             </div>
 
-            <div id="personal" className="myArticles container-fluid">
+            <div id="personal" className="myArticles container-fluid"  style={myArticlesStyle}>
                 <h1 className="text-center mb-4">Personal Stuff</h1>
                 <div className="row">
                     <div className="col-sm-4 text-center">
@@ -107,37 +123,38 @@ export const About = () => {
                 </div>
             </div>
 
-            <div id="carousel" className="carousel slide" data-bs-ride="carousel">
-                <div className="carousel-inner">
-                    <div className="carousel-item active">
-                        <h3 className="px-5 text-gray textShadowBlack" style={{fontStyle:'italic'}}>"If something is truly
-                            important to you, pursue it relentlessly."</h3>
-                        <figcaption className="blockquote-footer text-end mt-3 mx-5">
-                            <cite title="Source Title" className="text-white" style={{opacity:0.6}}>quote<span
-                                    style={{color:'#00857c'}}>By</span><span style={{color:'lime'}}>Pete</span></cite>
-                        </figcaption>
-                    </div>
-                    <div className="carousel-item">
-                        <h3 className="px-5 text-gray textShadowBlack" style={{fontStyle:'italic'}}>"I'm a fast learner, if I had
-                            a 'super-power' it would be the ability to focus."</h3>
-                        <figcaption className="blockquote-footer text-end mt-3 mx-5">
-                            <cite title="Source Title" className="text-white" style={{opacity:0.6}}>quote<span
-                                    style={{color:'#00857c'}}>By</span><span style={{color:'lime'}}>Pete</span></cite>
-                        </figcaption>
-                    </div>
-                    <div className="carousel-item">
-                        <h3 className="px-5 text-gray textShadowBlack" style={{fontStyle:'italic'}}>"A frustrating experience can
-                            be reframed into a progression opportunity."</h3>
-                        <figcaption className="blockquote-footer text-end mt-3 mx-5">
-                            <cite title="Source Title" className="text-white" style={{opacity:0.6}}>quote<span
-                                    style={{color:'#00857c'}}>By</span><span style={{color:'lime'}}>Pete</span></cite>
-                        </figcaption>
-                    </div>
-                </div>
-            </div>
+            <CarouselRelent />
 
             <Footer />
 
         </div>
     )
+}
+
+const initScrollMagicAbout = () => {
+
+    const githubContributionsController = new ScrollMagic.Controller();
+    const githubContributions = new ScrollMagic.Scene({
+            triggerElement: '#githubContributions',
+            offset: -200
+        })
+        .setClassToggle('#githubContributions', 'show')
+        .addTo(githubContributionsController);
+        
+    const buttonContactController = new ScrollMagic.Controller();
+    const buttonContact = new ScrollMagic.Scene({
+            triggerElement: '#buttonContact',
+            offset: -300
+        })
+        .setClassToggle('#buttonContact', 'show')
+        .addTo(buttonContactController);
+
+    const buttonBlogController = new ScrollMagic.Controller();
+    const buttonBlog = new ScrollMagic.Scene({
+            triggerElement: '#buttonBlog',
+            offset: -300
+        })
+        .setClassToggle('#buttonBlog', 'show')
+        .addTo(buttonBlogController);
+
 }

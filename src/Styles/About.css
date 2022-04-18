@@ -1,31 +1,12 @@
-#mainContent {
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-color: rgb(50, 50, 50) ;
-    align-items: center;
-}
 
 /* Article CSS Below */
-.myArticles {
-    margin: 2rem auto;
-    padding: 1rem;
-    border: 1px solid black;
-    border-radius: 0.25rem;
-    background-color: black;
-    width: 90vw;
-    max-width: 960px;
-    line-height: 1.6;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-}
-
 @media (max-width:960px) {
-    .myArticles {
+    #mainContentAbout>.myArticles {
         margin: 1rem 5vw;
     }
 }
 
-.myArticles>div>div>h3>img {
+#mainContentAbout>.myArticles>div>div>h3>img {
     width: 20vw;
     min-width: 5rem;
     max-width: 10rem;
@@ -127,17 +108,6 @@ a>img:hover {
     }
 }
 
-#githubContributions>div>div>a>img {
-    width: 90%;
-    box-shadow: none;
-}
-
-.carousel-item>a>img:hover {
-    z-index: 1;
-    opacity: 1 !important;
-    transform: scale(1.05);
-}
-
 #personal {
     margin-bottom: 3rem;
 }
@@ -180,32 +150,3 @@ a>img:hover {
 .btnContainer {
     max-width: 480px;
 }
-
-/* .btn {
-    margin: 0 1px;
-    width: 7rem;
-    border-radius: 2px;
-    border-color: dimgray;
-    background-color: dimgray;
-    color: lime;
-    transition: all 0.25s ease-in-out;
-    opacity: 0 !important;
-    text-decoration: none !important;
-    text-shadow: 1px 1px black;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-}
-
-.show {
-    opacity: 1 !important;
-}
-
-.btn:hover {
-    background-color: transparent;
-    border-color: lime;
-    color: lime;
-}
-
-.buttonEffect {
-    background-color: transparent !important;
-    border: none !important;
-} */

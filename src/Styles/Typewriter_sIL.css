@@ -1,32 +1,32 @@
-/* typeWriter_sIL media queries and animations below */
+/* sILTypewriter_sIL media queries and animations below */
 
 @media (max-width: 635px) {
-    #typeWriter>h2 {
+    h2 {
         font-size: 4vw;
     }
 
-    #typeWriter>h2 {
+    h2 {
         font-size: 1.5rem !important;
         letter-spacing: normal !important;
     }
 }
 
 @media (max-width: 500px) {
-    #typeWriter>h2 {
+    h2 {
         font-size: 1.25rem !important;
         letter-spacing: normal !important;
     }
 }
 
 @media (max-width: 350px) {
-    #typeWriter>h2 {
+    h2 {
         font-size: 1rem !important;
         letter-spacing: normal !important;
     }
 }
 
 @media (max-height: 500px) {
-    #typeWriterSection {
+    #sILTypewriterSection {
         margin-top: -5vh;
     }
 }
@@ -48,12 +48,12 @@
     }   
 }
 
-#typeWriter>#typeWriter1:before,
-#typeWriter>#typeWriter1:after,
-#typeWriter>#typeWriter2:before,
-#typeWriter>#typeWriter2:after,
-#typeWriter>#typeWriter3:before,
-#typeWriter>#typeWriter3:after {
+#sILTypewriter1:before,
+#sILTypewriter1:after,
+#sILTypewriter2:before,
+#sILTypewriter2:after,
+#sILTypewriter3:before,
+#sILTypewriter3:after {
     content: "";
     position: absolute;
     top: 0;
@@ -61,28 +61,28 @@
     height: 100%;
 }
 
-#typeWriter>#typeWriter1::before {
+#sILTypewriter1::before {
     width: 100vw;
     background: black;
-    animation: write 1s steps(22) 0.5s forwards;
+    animation: sILWrite 1s steps(22) 0.5s forwards;
     animation-delay: 4s;
 }
 
-#typeWriter>#typeWriter1::after {
+#sILTypewriter1::after {
     opacity: 1;
     width: 0.15em;
     background: black;
-    animation: write 1s steps(22) 0.5s forwards, blink 0.75s reverse steps(22) 2;
+    animation: sILWrite 1s steps(22) 0.5s forwards, sILBlink 0.75s reverse steps(22) 2;
     animation-delay: 4s;
 }
 
-@keyframes write {
+@keyframes sILWrite {
     to {
         left: 100%;
     }
 }
 
-@keyframes blink {
+@keyframes sILBlink {
     0% {
         opacity: 0;
         background: white;
@@ -108,11 +108,11 @@
     }
 }
 
-#typeWriter>#typeWriter2 {
-    animation: typeWriter2Fade 7s ease-in-out;
+#sILTypewriter2 {
+    animation: sILTypewriter2Fade 7s ease-in-out;
 }
 
-@keyframes typeWriter2Fade {
+@keyframes sILTypewriter2Fade {
     0% {
         opacity: 0;
     }
@@ -133,26 +133,26 @@
     100% {}
 }
 
-#typeWriter>#typeWriter2::before {
+#sILTypewriter2::before {
     width: 100vw;
     background: black;
-    animation: write 1.5s steps(28) 0.5s forwards;
+    animation: sILWrite 1.5s steps(28) 0.5s forwards;
     animation-delay: 5.5s;
 }
 
-#typeWriter>#typeWriter2::after {
+#sILTypewriter2::after {
     opacity: 1;
     width: 0.15em;
     background: black;
-    animation: write 1.5s steps(28) 0.5s forwards, blink 0.75s reverse steps(28) 3;
+    animation: sILWrite 1.5s steps(28) 0.5s forwards, sILBlink 0.75s reverse steps(28) 3;
     animation-delay: 5.5s;
 }
 
-#typeWriter>#typeWriter3 {
-    animation: typeWriter3Fade 11s ease-in-out;
+#sILTypewriter3 {
+    animation: sILTypewriter3Fade 11s ease-in-out;
 }
 
-@keyframes typeWriter3Fade {
+@keyframes sILTypewriter3Fade {
     0% {
         opacity: 0;
     }
@@ -173,17 +173,17 @@
     100% {}
 }
 
-#typeWriter>#typeWriter3::before {
+#sILTypewriter3::before {
     width: 100vw;
     background: black;
-    animation: write 1.5s steps(24) 0.5s forwards;
+    animation: sILWrite 1.5s steps(24) 0.5s forwards;
     animation-delay: 7.5s;
 }
 
-#typeWriter>#typeWriter3::after {
+#sILTypewriter3::after {
     opacity: 1;
     width: 0.15em;
     background: black;
-    animation: write 1.5s steps(24) 0.5s forwards, blink 0.75s reverse steps(24) infinite;
+    animation: sILWrite 1.5s steps(24) 0.5s forwards, sILBlink 0.75s reverse steps(24) infinite;
     animation-delay: 7.5s;
 }
