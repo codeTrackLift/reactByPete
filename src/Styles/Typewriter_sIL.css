@@ -1,20 +1,4 @@
-/* typeWriter below */
-#typeWriter {
-    margin: 0 auto;
-    width: fit-content;
-    padding: 5vh 0;
-    background-color: rgb(50, 50, 50);
-    display: flex;
-    flex-direction: column;
-}
-
-#typeWriterSection {
-    margin-top: 2rem !important;
-    background-color: rgb(50, 50, 50);
-    width: 100vw;
-    max-width: 100vw;
-    overflow-x: hidden;
-}
+/* typeWriter_sIL media queries and animations below */
 
 @media (max-width: 635px) {
     #typeWriter>h2 {
@@ -24,12 +8,6 @@
     #typeWriter>h2 {
         font-size: 1.5rem !important;
         letter-spacing: normal !important;
-    }
-}
-
-@media (max-width: 580px) {
-    #typeWriterSection {
-        margin-top: 0 !important;
     }
 }
 
@@ -56,6 +34,7 @@
 @keyframes animationFadeIn {
     0% {
         opacity: 0;
+        transform: scale(0);
     }
 
     56.125% {
@@ -66,26 +45,15 @@
     59.125% {
         transform: scale(1);
         opacity: 1;
-    }
+    }   
 }
 
-#typeWriter>h2 {
-    position: relative;
-    width: max-content;
-    font-weight: normal;
-    font-family: Menlo Regular;
-    font-size: 1.75rem;
-    letter-spacing: 0.125rem;
-    color: silver;
-    text-shadow: 1px 1px black;
-}
-
-#typeWriter1:before,
-#typeWriter1:after,
-#typeWriter2:before,
-#typeWriter2:after,
-#typeWriter3:before,
-#typeWriter3:after {
+#typeWriter>#typeWriter1:before,
+#typeWriter>#typeWriter1:after,
+#typeWriter>#typeWriter2:before,
+#typeWriter>#typeWriter2:after,
+#typeWriter>#typeWriter3:before,
+#typeWriter>#typeWriter3:after {
     content: "";
     position: absolute;
     top: 0;
@@ -93,17 +61,19 @@
     height: 100%;
 }
 
-#typeWriter1::before {
+#typeWriter>#typeWriter1::before {
     width: 100vw;
-    background: rgb(50, 50, 50);
+    background: black;
     animation: write 1s steps(22) 0.5s forwards;
+    animation-delay: 4s;
 }
 
-#typeWriter1::after {
+#typeWriter>#typeWriter1::after {
     opacity: 1;
     width: 0.15em;
-    background: rgb(50, 50, 50);
-    animation: write 1s steps(22) 0.5s forwards, blink 0.75s reverse steps(22) 2.25;
+    background: black;
+    animation: write 1s steps(22) 0.5s forwards, blink 0.75s reverse steps(22) 2;
+    animation-delay: 4s;
 }
 
 @keyframes write {
@@ -138,32 +108,82 @@
     }
 }
 
-#typeWriter2::before {
+#typeWriter>#typeWriter2 {
+    animation: typeWriter2Fade 7s ease-in-out;
+}
+
+@keyframes typeWriter2Fade {
+    0% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    80.9% {
+        opacity: 1;
+
+    }
+
+    81% {
+        opacity: 1;
+    }
+
+    100% {}
+}
+
+#typeWriter>#typeWriter2::before {
     width: 100vw;
-    background: rgb(50, 50, 50);
+    background: black;
     animation: write 1.5s steps(28) 0.5s forwards;
-    animation-delay: 2s;
+    animation-delay: 5.5s;
 }
 
-#typeWriter2::after {
+#typeWriter>#typeWriter2::after {
     opacity: 1;
     width: 0.15em;
-    background: rgb(50, 50, 50);
+    background: black;
     animation: write 1.5s steps(28) 0.5s forwards, blink 0.75s reverse steps(28) 3;
-    animation-delay: 2s;
+    animation-delay: 5.5s;
 }
 
-#typeWriter3::before {
+#typeWriter>#typeWriter3 {
+    animation: typeWriter3Fade 11s ease-in-out;
+}
+
+@keyframes typeWriter3Fade {
+    0% {
+        opacity: 0;
+    }
+
+    59% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 1;
+
+    }
+
+    81% {
+        opacity: 1;
+    }
+
+    100% {}
+}
+
+#typeWriter>#typeWriter3::before {
     width: 100vw;
-    background: rgb(50, 50, 50);
+    background: black;
     animation: write 1.5s steps(24) 0.5s forwards;
-    animation-delay: 4s;
+    animation-delay: 7.5s;
 }
 
-#typeWriter3::after {
+#typeWriter>#typeWriter3::after {
     opacity: 1;
     width: 0.15em;
-    background: rgb(50, 50, 50);
+    background: black;
     animation: write 1.5s steps(24) 0.5s forwards, blink 0.75s reverse steps(24) infinite;
-    animation-delay: 4s;
+    animation-delay: 7.5s;
 }

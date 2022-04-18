@@ -1,8 +1,8 @@
 import React from 'react';
 import { Nav, Navbar } from 'react-bootstrap'
 import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
-import pharma2CodeLogo from '../Images/pharma2code_icon.gif';
 import '../Styles/App.css';
+import '../Styles/Typography.css';
 import '../Styles/Navbar.css';
 import { Welcome } from './Welcome';
 import { About } from './About';
@@ -10,6 +10,7 @@ import { Blog } from './Blog';
 import { Projects } from './Projects';
 import { Resume } from './Resume';
 import { Contact } from './Contact';
+import pharma2CodeLogo from '../Images/pharma2code_icon.gif';
 
 function App() {
 

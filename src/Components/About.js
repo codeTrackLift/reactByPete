@@ -1,5 +1,5 @@
 import React from 'react';
-import Footer from './Footer';
+import { Footer } from './Partials/Footer';
 // import '../Styles/About.css';
 import '../Styles/Cards.css';
 import '../Styles/Typewriter_cTL.css';

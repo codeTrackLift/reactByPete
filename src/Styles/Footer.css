@@ -21,7 +21,7 @@ footer>p>a {
     text-decoration: none;
 }
 
-footer>p>a>img {
+footer>p>img {
     animation: slowSpin 5s ease-in-out infinite;
     -webkit-filter: drop-shadow(1px 1px 1px black);
     filter: drop-shadow(1px 1px 1px black);
