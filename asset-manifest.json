@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/reactByPete/static/css/main.c8d0a8ae.css",
-    "main.js": "/reactByPete/static/js/main.ccf2acb0.js",
+    "main.js": "/reactByPete/static/js/main.496a2917.js",
     "static/media/peteTheForce.png": "/reactByPete/static/media/peteTheForce.579230d33eead5f9ff25.png",
     "static/media/peteLaFitness.jpg": "/reactByPete/static/media/peteLaFitness.b393068046f5ac59e195.jpg",
     "static/media/vesselCode_tilt_part.jpg": "/reactByPete/static/media/vesselCode_tilt_part.ff1c18871b748da16c94.jpg",
@@ -23,10 +23,10 @@
     "static/media/bootstrap-logo.svg": "/reactByPete/static/media/bootstrap-logo.b91717f3b8ef81a7bf2e8b03a9579108.svg",
     "index.html": "/reactByPete/index.html",
     "main.c8d0a8ae.css.map": "/reactByPete/static/css/main.c8d0a8ae.css.map",
-    "main.ccf2acb0.js.map": "/reactByPete/static/js/main.ccf2acb0.js.map"
+    "main.496a2917.js.map": "/reactByPete/static/js/main.496a2917.js.map"
   },
   "entrypoints": [
     "static/css/main.c8d0a8ae.css",
-    "static/js/main.ccf2acb0.js"
+    "static/js/main.496a2917.js"
   ]
 }
