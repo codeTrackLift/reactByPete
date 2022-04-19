@@ -1,5 +1,5 @@
 import React from 'react';
-// import ScrollMagic from 'scrollmagic';
+import { NavLink } from 'react-router-dom';
 import { Button, Container, Nav, Row } from 'react-bootstrap';
 import { CarouselGDPs} from './CarouselGDPs';
 import { clearScrollMagic, initScrollMagicWelcome } from './MyScrollmagic';
@@ -93,12 +93,12 @@ export const WelcomeMain = () => {
                                 <p className="card-text"  style={cardBodyPStyle}>View source code or my documentation on GitHub.</p>
                                 <p className="card-text"  style={cardBodyPStyle}>Read blog articles about my Coding Bootcamp experience.</p>
                                 <div className="btnContainer mt-3">
-                                    <Nav.Link to='/projects' href='/projects' style={{padding:0}}>
+                                    <Nav.Link to='/reactByPete/projects' href='/reactByPete/projects' style={{padding:0}} as={NavLink}>
                                         <Button className='btn btnDark' variant='secondary' style={{borderRadius:'2px'}}>
                                             Projects
                                         </Button>
                                     </Nav.Link>
-                                    <Nav.Link to='/blog' href='/blog' style={{padding:0}}>
+                                    <Nav.Link to='/reactByPete/blog' href='/reactByPete/blog' style={{padding:0}}>
                                         <Button className='btn' variant='secondary' style={{borderRadius:'2px'}}>
                                             Blog
                                         </Button>
@@ -136,12 +136,12 @@ export const WelcomeMain = () => {
                         <p className="card-text"  style={cardBodyPStyle}>20 year Pharmaceutical Professional</p>
                         <p className="card-text"  style={cardBodyPStyle}>Full Stack Coding Bootcamp<span style={{color:'gray'}}> (in progress, Jul 2022)</span></p>
                         <div className="btnContainer mt-3">
-                            <Nav.Link to='/about' href='/about' style={{padding:0}}>
+                            <Nav.Link to='/reactByPete/about' href='/reactByPete/about' style={{padding:0}} as={NavLink}>
                                 <Button className='btnDark' variant='secondary' style={{borderRadius:'2px'}}>
                                     About
                                 </Button>
                             </Nav.Link>
-                            <Nav.Link to='/resume' href='/resume' style={{padding:0}}>
+                            <Nav.Link to='/reactByPete/resume' href='/reactByPete/resume' style={{padding:0}} as={NavLink}>
                                 <Button variant='secondary' style={{borderRadius:'2px'}}>
                                     Resume
                                 </Button>
@@ -160,7 +160,7 @@ export const WelcomeMain = () => {
             <Container fluid id='bottomNav' className='mt-5'>
                 <h5 className="menloRegular textSilver textShadowBlack text-center mx-auto" style={{maxWidth:'860px'}}>Let me know you visited...</h5>
                 <div className="container-fluid text-center mt-4" style={{maxWidth:'480px'}}>
-                    <Nav.Link to='/contact' href='/contact'>
+                    <Nav.Link to='/reactByPete/contact' href='/contact' as={NavLink}>
                         <Button id='buttonContact' className='btnDark' variant='secondary'>
                             Contact
                         </Button>

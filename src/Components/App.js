@@ -57,25 +57,25 @@ export default function App() {
                         </span>
                     </h3>
                     <Navbar.Collapse className="collapse navbar-collapse" id="navbarTogglerDemo02">
-                        <Nav className="navbar-nav me-auto mb-2 mb-lg-0" defaultActiveKey={isWelcome ? 1 : null}>
-                            <Nav.Link eventKey={1} onClick={() => setExpanded(false)} href='*' as={NavLink} to='/'>Welcome</Nav.Link>
-                            <Nav.Link eventKey={2} onClick={() => setExpanded(false)} href='/about' as={NavLink} to='/about'>About</Nav.Link>
-                            <Nav.Link eventKey={3} onClick={() => setExpanded(false)} href='/blog' as={NavLink} to='/blog'>Blog</Nav.Link>
-                            <Nav.Link eventKey={4} onClick={() => setExpanded(false)} href='/projects' as={NavLink} to='/projects'>Projects</Nav.Link>
-                            <Nav.Link eventKey={5} onClick={() => setExpanded(false)} href='/resume' as={NavLink} to='/resume'>Resume</Nav.Link>
-                            <Nav.Link eventKey={6} onClick={() => setExpanded(false)} href='/contact' as={NavLink} to='/contact'>Contact</Nav.Link>
+                        <Nav className="navbar-nav me-auto mb-2 mb-lg-0">
+                            <Nav.Link eventKey={1} onClick={() => setExpanded(false)} href='/reactByPete/*' as={NavLink} to='/reactByPete/'>Welcome</Nav.Link>
+                            <Nav.Link eventKey={2} onClick={() => setExpanded(false)} href='/reactByPete/about' as={NavLink} to='/reactByPete/about'>About</Nav.Link>
+                            <Nav.Link eventKey={3} onClick={() => setExpanded(false)} href='/reactByPete/blog' as={NavLink} to='/reactByPete/blog'>Blog</Nav.Link>
+                            <Nav.Link eventKey={4} onClick={() => setExpanded(false)} href='/reactByPete/projects' as={NavLink} to='/reactByPete/projects'>Projects</Nav.Link>
+                            <Nav.Link eventKey={5} onClick={() => setExpanded(false)} href='/reactByPete/resume' as={NavLink} to='/reactByPete/resume'>Resume</Nav.Link>
+                            <Nav.Link eventKey={6} onClick={() => setExpanded(false)} href='/reactByPete/contact' as={NavLink} to='/reactByPete/contact'>Contact</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
                 
                 <ScrollToTop />
                 <Routes>
-                    <Route path="*" element={<Welcome/>} />
-                    <Route path="/about" element={<About/>} />
-                    <Route path="/blog" element={<Blog/>} />
-                    <Route path="/projects" element={<Projects/>} />
-                    <Route path="/resume" element={<Resume/>} />
-                    <Route path="/contact" element={<Contact/>} />
+                    <Route path="/reactByPete/*" element={<Welcome/>} />
+                    <Route path="/reactByPete/about" element={<About/>} />
+                    <Route path="/reactByPete/blog" element={<Blog/>} />
+                    <Route path="/reactByPete/projects" element={<Projects/>} />
+                    <Route path="/reactByPete/resume" element={<Resume/>} />
+                    <Route path="/reactByPete/contact" element={<Contact/>} />
                 </Routes>
             </div>
         </BrowserRouter>

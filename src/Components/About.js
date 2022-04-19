@@ -133,12 +133,12 @@ export const About = () => {
                         className="text-white">Need help with a project?</span> Read blog articles about my Coding Bootcamp
                     experience.</h5>
                 <div className="btnContainer container-fluid text-center mt-4 d-flex justify-content-evenly" style={{maxWidth:'480px'}}>
-                    <Nav.Link to='/contact' href='/contact'>
+                    <Nav.Link to='/reactByPete/contact' href='/reactByPete/contact'>
                         <Button id='buttonContact' className='btnDark' variant='secondary'>
                             Contact
                         </Button>
                     </Nav.Link>
-                    <Nav.Link to='/blog' href='/blog'>
+                    <Nav.Link to='/reactByPete/blog' href='/reactByPete/blog'>
                         <Button id='buttonBlog' variant='secondary'>
                             Blog
                         </Button>
