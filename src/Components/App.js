@@ -59,11 +59,11 @@ export default function App() {
                     <Navbar.Collapse className="collapse navbar-collapse" id="navbarTogglerDemo02">
                         <Nav className="navbar-nav me-auto mb-2 mb-lg-0" defaultActiveKey={isWelcome ? 1 : null}>
                             <Nav.Link eventKey={1} onClick={() => setExpanded(false)} href='*' as={NavLink} to='/'>Welcome</Nav.Link>
-                            <Nav.Link eventKey={2} onClick={() => setExpanded(false)} href='/About' as={NavLink} to='/About'>About</Nav.Link>
-                            <Nav.Link eventKey={3} onClick={() => setExpanded(false)} href='/Blog' as={NavLink} to='/Blog'>Blog</Nav.Link>
-                            <Nav.Link eventKey={4} onClick={() => setExpanded(false)} href='/Projects' as={NavLink} to='/Projects'>Projects</Nav.Link>
-                            <Nav.Link eventKey={5} onClick={() => setExpanded(false)} href='/Resume' as={NavLink} to='/Resume'>Resume</Nav.Link>
-                            <Nav.Link eventKey={6} onClick={() => setExpanded(false)} href='/Contact' as={NavLink} to='/Contact'>Contact</Nav.Link>
+                            <Nav.Link eventKey={2} onClick={() => setExpanded(false)} href='/about' as={NavLink} to='/about'>About</Nav.Link>
+                            <Nav.Link eventKey={3} onClick={() => setExpanded(false)} href='/blog' as={NavLink} to='/blog'>Blog</Nav.Link>
+                            <Nav.Link eventKey={4} onClick={() => setExpanded(false)} href='/projects' as={NavLink} to='/projects'>Projects</Nav.Link>
+                            <Nav.Link eventKey={5} onClick={() => setExpanded(false)} href='/resume' as={NavLink} to='/resume'>Resume</Nav.Link>
+                            <Nav.Link eventKey={6} onClick={() => setExpanded(false)} href='/contact' as={NavLink} to='/contact'>Contact</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
@@ -71,11 +71,11 @@ export default function App() {
                 <ScrollToTop />
                 <Routes>
                     <Route path="*" element={<Welcome/>} />
-                    <Route path="/About" element={<About/>} />
-                    <Route path="/Blog" element={<Blog/>} />
-                    <Route path="/Projects" element={<Projects/>} />
-                    <Route path="/Resume" element={<Resume/>} />
-                    <Route path="/Contact" element={<Contact/>} />
+                    <Route path="/about" element={<About/>} />
+                    <Route path="/blog" element={<Blog/>} />
+                    <Route path="/projects" element={<Projects/>} />
+                    <Route path="/resume" element={<Resume/>} />
+                    <Route path="/contact" element={<Contact/>} />
                 </Routes>
             </div>
         </BrowserRouter>

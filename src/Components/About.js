@@ -1,7 +1,6 @@
 import React from 'react';
 import { clearScrollMagic, initScrollMagicAbout } from './Partials/MyScrollmagic';
-import { Link } from 'react-router-dom';
-import { Button } from 'react-bootstrap';
+import { Button, Nav } from 'react-bootstrap';
 import { CodeTrackLift } from './Partials/Typewriter_cTL';
 import { CarouselRelent } from './Partials/CarouselRelent';
 import { Footer } from './Partials/Footer';
@@ -134,16 +133,16 @@ export const About = () => {
                         className="text-white">Need help with a project?</span> Read blog articles about my Coding Bootcamp
                     experience.</h5>
                 <div className="btnContainer container-fluid text-center mt-4 d-flex justify-content-evenly" style={{maxWidth:'480px'}}>
-                    <Link to='/Contact'>
+                    <Nav.Link to='/contact' href='/contact'>
                         <Button id='buttonContact' className='btnDark' variant='secondary'>
                             Contact
                         </Button>
-                    </Link>
-                    <Link to='/Blog'>
+                    </Nav.Link>
+                    <Nav.Link to='/blog' href='/blog'>
                         <Button id='buttonBlog' variant='secondary'>
                             Blog
                         </Button>
-                    </Link>
+                    </Nav.Link>
                 </div>
             </div>
 

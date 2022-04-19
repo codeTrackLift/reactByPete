@@ -1,7 +1,6 @@
 import React from 'react';
 // import ScrollMagic from 'scrollmagic';
-import { Link } from 'react-router-dom';
-import { Button, Container, Row } from 'react-bootstrap';
+import { Button, Container, Nav, Row } from 'react-bootstrap';
 import { CarouselGDPs} from './CarouselGDPs';
 import { clearScrollMagic, initScrollMagicWelcome } from './MyScrollmagic';
 import { Footer } from './Footer';
@@ -94,16 +93,16 @@ export const WelcomeMain = () => {
                                 <p className="card-text"  style={cardBodyPStyle}>View source code or my documentation on GitHub.</p>
                                 <p className="card-text"  style={cardBodyPStyle}>Read blog articles about my Coding Bootcamp experience.</p>
                                 <div className="btnContainer mt-3">
-                                    <Link to='/Projects'>
-                                        <Button className='btnDark' variant='secondary'>
+                                    <Nav.Link to='/projects' href='/projects' style={{padding:0}}>
+                                        <Button className='btn btnDark' variant='secondary' style={{borderRadius:'2px'}}>
                                             Projects
                                         </Button>
-                                    </Link>
-                                    <Link to='/Blog'>
-                                        <Button variant='secondary'>
+                                    </Nav.Link>
+                                    <Nav.Link to='/blog' href='/blog' style={{padding:0}}>
+                                        <Button className='btn' variant='secondary' style={{borderRadius:'2px'}}>
                                             Blog
                                         </Button>
-                                    </Link>
+                                    </Nav.Link>
                                 </div>
                             </div>
                         </div>
@@ -137,16 +136,16 @@ export const WelcomeMain = () => {
                         <p className="card-text"  style={cardBodyPStyle}>20 year Pharmaceutical Professional</p>
                         <p className="card-text"  style={cardBodyPStyle}>Full Stack Coding Bootcamp<span style={{color:'gray'}}> (in progress, Jul 2022)</span></p>
                         <div className="btnContainer mt-3">
-                            <Link to='/About'>
-                                <Button className='btnDark' variant='secondary'>
+                            <Nav.Link to='/about' href='/about' style={{padding:0}}>
+                                <Button className='btnDark' variant='secondary' style={{borderRadius:'2px'}}>
                                     About
                                 </Button>
-                            </Link>
-                            <Link to='/Resume'>
-                                <Button variant='secondary'>
+                            </Nav.Link>
+                            <Nav.Link to='/resume' href='/resume' style={{padding:0}}>
+                                <Button variant='secondary' style={{borderRadius:'2px'}}>
                                     Resume
                                 </Button>
-                            </Link>
+                            </Nav.Link>
                         </div>
                     </div>
                 </div>
@@ -161,11 +160,11 @@ export const WelcomeMain = () => {
             <Container fluid id='bottomNav' className='mt-5'>
                 <h5 className="menloRegular textSilver textShadowBlack text-center mx-auto" style={{maxWidth:'860px'}}>Let me know you visited...</h5>
                 <div className="container-fluid text-center mt-4" style={{maxWidth:'480px'}}>
-                    <Link to='/Contact'>
+                    <Nav.Link to='/contact' href='/contact'>
                         <Button id='buttonContact' className='btnDark' variant='secondary'>
                             Contact
                         </Button>
-                    </Link>
+                    </Nav.Link>
                 </div>
             </Container>
 
@@ -182,46 +181,3 @@ export const WelcomeMain = () => {
         </section>
     );
 }
-
-// const initScrollMagicWelcome = () => {
-//     var welcomeCard1Controller = new ScrollMagic.Controller();
-//     var welcomeCard1 = new ScrollMagic.Scene({
-//             triggerElement: '#welcomeCard1',
-//         })
-//         .setClassToggle('#welcomeCard1', 'shift')
-//         .addTo(welcomeCard1Controller);
-
-//     var welcomeCard2Controller = new ScrollMagic.Controller();
-//     var welcomeCard2 = new ScrollMagic.Scene({
-//             triggerElement: '#welcomeCard2',
-//         })
-//         .setClassToggle('#welcomeCard2', 'shift')
-//         .addTo(welcomeCard2Controller);
-
-//     var githubContributionsController = new ScrollMagic.Controller();
-//     var githubContributions = new ScrollMagic.Scene({
-//             triggerElement: '#githubContributions',
-//             offset: -200
-//         })
-//         .setClassToggle('#githubContributions', 'show')
-//         .addTo(githubContributionsController);
-
-//     var buttonContactController = new ScrollMagic.Controller();
-//     var buttonContact = new ScrollMagic.Scene({
-//             triggerElement: '#buttonContact',
-//             offset: -200
-//         })
-//         .setClassToggle('#buttonContact', 'show')
-//         .addTo(buttonContactController);
-// }
-
-// const clearScrollMagicWelcome = () => {
-//     var welcomeCard1Controller = null;
-//     var welcomeCard1 = null;
-//     var welcomeCard2Controller = null;
-//     var welcomeCard2 = null;
-//     var githubContributionsController = null;
-//     var githubContributions = null;
-//     var buttonContactController = null;
-//     var buttonContact = null;
-// }
