@@ -93,12 +93,12 @@ export const WelcomeMain = () => {
                                 <p className="card-text"  style={cardBodyPStyle}>View source code or my documentation on GitHub.</p>
                                 <p className="card-text"  style={cardBodyPStyle}>Read blog articles about my Coding Bootcamp experience.</p>
                                 <div className="btnContainer mt-3">
-                                    <Nav.Link to='/reactByPete/projects' href='/reactByPete/projects' style={{padding:0}} as={NavLink}>
+                                    <Nav.Link to='/reactByPete/projects' href='/reactByPete/projects' style={{padding:0}} as={NavLink} eventKey={4}>
                                         <Button className='btn btnDark' variant='secondary' style={{borderRadius:'2px'}}>
                                             Projects
                                         </Button>
                                     </Nav.Link>
-                                    <Nav.Link to='/reactByPete/blog' href='/reactByPete/blog' style={{padding:0}}>
+                                    <Nav.Link to='/reactByPete/blog' href='/reactByPete/blog' style={{padding:0}} as={NavLink} eventKey={3}>
                                         <Button className='btn' variant='secondary' style={{borderRadius:'2px'}}>
                                             Blog
                                         </Button>
@@ -137,11 +137,11 @@ export const WelcomeMain = () => {
                         <p className="card-text"  style={cardBodyPStyle}>Full Stack Coding Bootcamp<span style={{color:'gray'}}> (in progress, Jul 2022)</span></p>
                         <div className="btnContainer mt-3">
                             <Nav.Link to='/reactByPete/about' href='/reactByPete/about' style={{padding:0}} as={NavLink}>
-                                <Button className='btnDark' variant='secondary' style={{borderRadius:'2px'}}>
+                                <Button className='btnDark' variant='secondary' style={{borderRadius:'2px'}} eventKey={2}>
                                     About
                                 </Button>
                             </Nav.Link>
-                            <Nav.Link to='/reactByPete/resume' href='/reactByPete/resume' style={{padding:0}} as={NavLink}>
+                            <Nav.Link to='/reactByPete/resume' href='/reactByPete/resume' style={{padding:0}} as={NavLink}eventKey={5}>
                                 <Button variant='secondary' style={{borderRadius:'2px'}}>
                                     Resume
                                 </Button>
@@ -160,7 +160,7 @@ export const WelcomeMain = () => {
             <Container fluid id='bottomNav' className='mt-5'>
                 <h5 className="menloRegular textSilver textShadowBlack text-center mx-auto" style={{maxWidth:'860px'}}>Let me know you visited...</h5>
                 <div className="container-fluid text-center mt-4" style={{maxWidth:'480px'}}>
-                    <Nav.Link to='/reactByPete/contact' href='/contact' as={NavLink}>
+                    <Nav.Link to='/reactByPete/contact' href='/contact' as={NavLink} eventKey={6}>
                         <Button id='buttonContact' className='btnDark' variant='secondary'>
                             Contact
                         </Button>
