@@ -18,7 +18,7 @@ export default function App() {
     
     const [expanded, setExpanded] = React.useState(false);
     const [isWelcome, setIsWelcome] = React.useState(true);
-
+    
     const ScrollToTop = () => {
         const { pathname } = useLocation();
         if(pathname.length === 1) {
@@ -58,7 +58,7 @@ export default function App() {
                         </span>
                     </h3>
                     <Navbar.Collapse className="collapse navbar-collapse" id="navbarTogglerDemo02">
-                        <Nav className="navbar-nav me-auto mb-2 mb-lg-0">
+                        <Nav className="navbar-nav me-auto mb-2 mb-lg-0" defaultActiveKey={isWelcome ? 1 : null}>
                             <Nav.Link eventKey={1} onClick={() => setExpanded(false)} href='*' as={NavLink} to='/'>Welcome</Nav.Link>
                             <Nav.Link eventKey={2} onClick={() => setExpanded(false)} href='/About' as={NavLink} to='/About'>About</Nav.Link>
                             <Nav.Link eventKey={3} onClick={() => setExpanded(false)} href='/Blog' as={NavLink} to='/Blog'>Blog</Nav.Link>
