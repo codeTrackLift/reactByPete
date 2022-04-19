@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import { clearScrollMagic, initScrollMagicAbout } from './Helpers/MyScrollmagic';
 import { Button, Nav } from 'react-bootstrap';
 import { CodeTrackLift } from './Partials/Typewriter_cTL';
@@ -139,12 +140,12 @@ export const About = () => {
                         className="text-white">Need help with a project?</span> Read blog articles about my Coding Bootcamp
                     experience.</h5>
                 <div className="btnContainer container-fluid text-center mt-4 d-flex justify-content-evenly" style={{maxWidth:'480px'}}>
-                    <Nav.Link to='/reactByPete/contact' href='/reactByPete/contact'>
+                    <Nav.Link to='/reactByPete/contact' href='/reactByPete/contact' as={NavLink}>
                         <Button id='buttonContact' className='btnDark' variant='secondary'>
                             Contact
                         </Button>
                     </Nav.Link>
-                    <Nav.Link to='/reactByPete/blog' href='/reactByPete/blog'>
+                    <Nav.Link to='/reactByPete/blog' href='/reactByPete/blog' as={NavLink}>
                         <Button id='buttonBlog' variant='secondary'>
                             Blog
                         </Button>
