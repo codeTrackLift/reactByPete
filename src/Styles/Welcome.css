@@ -6,8 +6,8 @@
 
 /* Tech Stack */
 
-#welcomeCard1>.card-body>.btnContainer>.btn,
-#welcomeCard2>.card-body>.btnContainer>.btn {
+#welcomeCard1>.card-body>.btnContainer>*>*,
+#welcomeCard2>.card-body>.btnContainer>*>* {
     opacity: 1 !important;
 }
 

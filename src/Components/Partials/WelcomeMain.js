@@ -1,8 +1,9 @@
 import React from 'react';
 import ScrollMagic from 'scrollmagic';
+import { Link } from 'react-router-dom';
+import { Button, Container, Row } from 'react-bootstrap';
 import { CarouselGDPs} from './CarouselGDPs';
 import { Footer } from './Footer';
-import { Container, Row } from 'react-bootstrap';
 import '../../Styles/Cards.css';
 import '../../Styles/Welcome.css';
 import '../../Styles/WelcomeAnimations.css';
@@ -90,8 +91,16 @@ export const WelcomeMain = () => {
                         <p className="card-text"  style={cardBodyPStyle}>View source code or my documentation on GitHub.</p>
                         <p className="card-text"  style={cardBodyPStyle}>Read blog articles about my Coding Bootcamp experience.</p>
                         <div className="btnContainer mt-3">
-                            <a href="../pages/projects.html" className="btn btn-secondary">Projects</a>
-                            <a href="../pages/blog.html" className="btn btn-secondary btnDark">Blog</a>
+                            <Link to='/Projects'>
+                                <Button className='btnDark' variant='secondary'>
+                                    Projects
+                                </Button>
+                            </Link>
+                            <Link to='/Blog'>
+                                <Button variant='secondary'>
+                                    Blog
+                                </Button>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -125,8 +134,16 @@ export const WelcomeMain = () => {
                         <p className="card-text"  style={cardBodyPStyle}>20 year Pharmaceutical Professional</p>
                         <p className="card-text"  style={cardBodyPStyle}>Full Stack Coding Bootcamp<span style={{color:'gray'}}> (in progress, Jul 2022)</span></p>
                         <div className="btnContainer mt-3">
-                            <a href="../pages/about.html" className="btn btn-secondary btnDark">About</a>
-                            <a href="../pages/resume.html" className="btn btn-secondary" >Resume</a>
+                            <Link to='/About'>
+                                <Button className='btnDark' variant='secondary'>
+                                    About
+                                </Button>
+                            </Link>
+                            <Link to='/Resume'>
+                                <Button variant='secondary'>
+                                    Resume
+                                </Button>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -141,7 +158,11 @@ export const WelcomeMain = () => {
             <Container fluid id='bottomNav' className='mt-5'>
                 <h5 className="menloRegular textSilver textShadowBlack text-center mx-auto" style={{maxWidth:'860px'}}>Let me know you visited...</h5>
                 <div className="container-fluid text-center mt-4" style={{maxWidth:'480px'}}>
-                    <a id='buttonContact' href="../pages/contact.html" className="btn btn-secondary btnDark">Contact Me</a>
+                    <Link to='/Contact'>
+                        <Button id='buttonContact' className='btnDark' variant='secondary'>
+                            Contact
+                        </Button>
+                    </Link>
                 </div>
             </Container>
 

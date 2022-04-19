@@ -76,15 +76,15 @@
     color: lime;
 }
 
-#bottomNav>div>.btn.btnDark {
+#bottomNav>div>a>Button.btnDark {
     transform: translateX(-2rem);
 }
 
-#bottomNav>div>.btn {
+#bottomNav>div>a>Button {
     transform: translateX(2rem);
 }
 
-#bottomNav>div>.btn.show {
+#bottomNav>div>a>Button.show {
     transform: translate(0) !important;
     opacity: 1 !important;
 }

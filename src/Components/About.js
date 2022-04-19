@@ -1,5 +1,7 @@
 import React from 'react';
 import ScrollMagic from 'scrollmagic';
+import { Link } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
 import { CodeTrackLift } from './Partials/Typewriter_cTL';
 import { CarouselRelent } from './Partials/CarouselRelent';
 import { Footer } from './Partials/Footer';
@@ -70,21 +72,21 @@ export const About = () => {
 
             <div id="myIntro" className="myArticles container-fluid mt-5" style={myArticlesStyle}>
                 <h2>Hello,</h2>
-                <p className='textGray'>My name is <span className="menloRegular" style={{color:'chocolate'}}>Pete</span> and I <span className='textSilver'>grew up in the
+                <p className='textSilver'>My name is <span className="menloRegular" style={{color:'chocolate'}}>Pete</span> and I <span className='text-white'>grew up in the
                         90s</span>. I fondly remember multi-sided die, Bulletin Board Systems, Sierra games, and AOL CDs.
                 </p>
-                <p className='textGray'>'Medicine is my destiny,' or so I was told. I have a <span className='textSilver'>Bachelor's Degree</span> in <span className='textSilver'>Biological
+                <p className='textSilver'>'Medicine is my destiny,' or so I was told. I have a <span className='text-white'>Bachelor's Degree</span> in <span className='text-white'>Biological
                         Sciences</span>, and my <a href="../pages/resume.html" target="_blank" rel='noreferrer'
-                        className="menloRegular">stationInLife</a> was in the <span className='textSilver'>Pharmaceutical Engineering</span> space for
+                        className="menloRegular">stationInLife</a> was in the <span className='text-white'>Pharmaceutical Engineering</span> space for
                     two decades.</p>
-                <p className='textGray'>At the mid-point of my career, I enrolled in a <span className='textSilver'>Full Stack Coding Bootcamp</span> to pursue my
-                    <span className='textSilver'>childhood dream</span> of being a <span className="menloRegular" style={{color:'darkorchid'}}>Software
+                <p className='textSilver'>At the mid-point of my career, I enrolled in a <span className='text-white'>Full Stack Coding Bootcamp</span> to pursue my
+                    <span className='text-white'> childhood dream</span> of being a <span className="menloRegular" style={{color:'darkorchid'}}>Software
                         Developer</span>.</p>
-                <p className='textGray'>Please join me, on <a href="../pages/blog.html" target="_blank" rel='noreferrer' className="menloRegular">myCodingJourney</a>.
+                <p className='textSilver'>Please join me, on <a href="../pages/blog.html" target="_blank" rel='noreferrer' className="menloRegular">myCodingJourney</a>.
                 </p>
                 <div className="row">
                     <img id='crushItApple' className='col-sm-1 img-fluid' src={crushItApple} alt="Core Nutritionals sticker on a glowing Apple logo." style={imageRectStyle}/>
-                    <p className="col-sm-11 text-end">Best Regards,<br/>Pete Chu, BA</p>
+                    <p className="textSilver col-sm-11 text-end">Best Regards,<br/>Pete Chu, BA</p>
                 </div>
             </div>
 
@@ -109,7 +111,7 @@ export const About = () => {
                     <p className="col-sm-4 mt-4"><span style={{color:'darkorchid'}}>Fitness {'&'} nutrition</span> are my other life passions. I am also a certified personal trainer (hobby).</p>
                     <p className="col-sm-7"><span style={{color:'chocolate'}}>Dogs {'>'} cats</span>, but I like any animal that does
                         not try to eat me. In my spare time, I pick up heavy things and put them back down. Some call it
-                        <span className='textSilver'>'resistance training</span>.<span className='textSilver'>'</span></p>
+                        <span className='text-white'> 'resistance training</span>.<span className='text-white'>'</span></p>
                 </div>
                 <div className="row">
                     <img src={peteSnowboardingMountain} className='col-sm-4 img-fluid py-3 my-auto' alt="Pete snowboarding."  style={imageSquareStyle}/>
@@ -118,7 +120,7 @@ export const About = () => {
                         alt="Annie is a sith lord!"  style={imageSquareStyle}/>
                 </div>
                 <div className="row">
-                    <p className="col-sm-7">I have slid down <span className='textSilver'>mountains</span> strapped to a waxy plank, and <span style={{color:'chocolate'}}>driven</span> in circles as fast as I can.</p>
+                    <p className="col-sm-7">I have slid down <span className='text-white'>mountains</span> strapped to a waxy plank, and <span style={{color:'chocolate'}}>driven</span> in circles as fast as I can.</p>
                     <p className="col-sm-4">I may have also married a <a href="https://en.wikipedia.org/wiki/Sith" target="_blank" rel='noreferrer'> Sith</a> Lord!<br/>
                         <span style={{color:'darkorchid'}}>'This is the way</span>.
                         <span style={{color:'darkorchid'}}>'</span>
@@ -127,12 +129,20 @@ export const About = () => {
             </div>
 
             <div id='bottomNav' className="container-fluid">
-                <h5 className="menloRegular text-silver textShadowBlack text-center mx-auto" style={{maxWidth: '640px'}}><span
+                <h5 className="menloRegular textSilver textShadowBlack text-center mx-auto" style={{maxWidth: '640px'}}><span
                         className="text-white">Need help with a project?</span> Read blog articles about my Coding Bootcamp
                     experience.</h5>
                 <div className="btnContainer container-fluid text-center mt-4 d-flex justify-content-evenly" style={{maxWidth:'480px'}}>
-                    <a id='buttonContact' href="../pages/contact.html" className="btn btn-secondary btnDark">Contact Me</a>
-                    <a id='buttonBlog' href="../pages/blog.html" className="btn btn-secondary">My Blog</a>
+                    <Link to='/Contact'>
+                        <Button id='buttonContact' className='btnDark' variant='secondary'>
+                            Contact
+                        </Button>
+                    </Link>
+                    <Link to='/Blog'>
+                        <Button id='buttonBlog' variant='secondary'>
+                            Blog
+                        </Button>
+                    </Link>
                 </div>
             </div>
 

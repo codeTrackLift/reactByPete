@@ -17,7 +17,7 @@ import pharma2CodeLogo from '../Images/pharma2code_icon.gif';
 export default function App() {
     
     const [expanded, setExpanded] = React.useState(false);
-    const [isWelcome, setIsWelcome] = React.useState(true);
+    const [isWelcome, setIsWelcome] = React.useState(null);
     
     const ScrollToTop = () => {
         const { pathname } = useLocation();
@@ -29,7 +29,7 @@ export default function App() {
             window.scrollTo(0, 0);
         }, [pathname]);
         return null;
-    }
+    }      
 
     return (
         <BrowserRouter>
