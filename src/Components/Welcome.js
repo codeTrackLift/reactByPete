@@ -1,5 +1,5 @@
 import React from 'react';
-import { initCBPLogoWelcome } from './Partials/cBPLogo';
+import { initCBPLogoWelcome } from './Helpers/cBPLogo';
 import { StationInLife } from './Partials/Typewriter_sIL';
 import { WelcomeMain } from './Partials/WelcomeMain';
 import '../Styles/Cards.css';
