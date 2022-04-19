@@ -1,5 +1,4 @@
-import React from 'react';
-import { useEffect} from 'react';
+import React, { useEffect } from 'react';
 import { Nav, Navbar } from 'react-bootstrap'
 import { BrowserRouter, Routes, Route, NavLink, useLocation } from "react-router-dom";
 import '../Styles/App.css';

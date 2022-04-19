@@ -1,12 +1,23 @@
 import React from 'react';
-import Footer from './Partials/Footer';
-import { Accordion, Carousel, Container, Row } from 'react-bootstrap';
-import '../Styles/App.css';
-import '../Styles/Navbar.css';
+import ScrollMagic from 'scrollmagic';
+import { Link } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
+import { MyCodingJourney } from './Partials/Typewriter_mCJ';
+import { CarouselRelent } from './Partials/CarouselRelent';
+import { Footer } from './Partials/Footer';
+import '../Styles/Cards.css';
 // import '../Styles/Blog.css';
+
+const mainContentStyle = {
+
+}
 
 export const Blog = () => {
     return (
-        <div><h3>Blog</h3></div>
+        <div id="mainContentAbout" style={mainContentStyle}>
+            
+            <MyCodingJourney />
+
+        </div>
     )
 }

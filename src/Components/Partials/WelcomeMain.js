@@ -1,8 +1,9 @@
 import React from 'react';
-import ScrollMagic from 'scrollmagic';
+// import ScrollMagic from 'scrollmagic';
 import { Link } from 'react-router-dom';
 import { Button, Container, Row } from 'react-bootstrap';
 import { CarouselGDPs} from './CarouselGDPs';
+import { initScrollMagicWelcome } from './MyScrollmagic';
 import { Footer } from './Footer';
 import '../../Styles/Cards.css';
 import '../../Styles/Welcome.css';
@@ -82,28 +83,29 @@ export const WelcomeMain = () => {
             </Row>
             
             <Row style={rowStyle}>
-                <div id='welcomeCard1' className="card col-sm-4" style={cardStyle}>
-                    <iframe className='container-fluid ratio ratio-1x1 pt-4' src="https://youtube.com/embed/L2MLboXUkUA" frameBorder="0" allowFullScreen title='Portfolio intro video'>
-                    </iframe>
-                    <div className="card-body">
-                        <h5 className="card-title" style={{color:'cornflowerblue'}}>See My Work</h5>
-                        <p className="card-text"  style={cardBodyPStyle}>Demo projects and see my progression.</p>
-                        <p className="card-text"  style={cardBodyPStyle}>View source code or my documentation on GitHub.</p>
-                        <p className="card-text"  style={cardBodyPStyle}>Read blog articles about my Coding Bootcamp experience.</p>
-                        <div className="btnContainer mt-3">
-                            <Link to='/Projects'>
-                                <Button className='btnDark' variant='secondary'>
-                                    Projects
-                                </Button>
-                            </Link>
-                            <Link to='/Blog'>
-                                <Button variant='secondary'>
-                                    Blog
-                                </Button>
-                            </Link>
+
+                        <div id='welcomeCard1' className="card col-sm-4" style={cardStyle}>
+                            <iframe className='container-fluid ratio ratio-1x1 pt-4' src="https://youtube.com/embed/L2MLboXUkUA" frameBorder="0" allowFullScreen title='Portfolio intro video'>
+                            </iframe>
+                            <div className="card-body">
+                                <h5 className="card-title" style={{color:'cornflowerblue'}}>See My Work</h5>
+                                <p className="card-text"  style={cardBodyPStyle}>Demo projects and see my progression.</p>
+                                <p className="card-text"  style={cardBodyPStyle}>View source code or my documentation on GitHub.</p>
+                                <p className="card-text"  style={cardBodyPStyle}>Read blog articles about my Coding Bootcamp experience.</p>
+                                <div className="btnContainer mt-3">
+                                    <Link to='/Projects'>
+                                        <Button className='btnDark' variant='secondary'>
+                                            Projects
+                                        </Button>
+                                    </Link>
+                                    <Link to='/Blog'>
+                                        <Button variant='secondary'>
+                                            Blog
+                                        </Button>
+                                    </Link>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
 
                 <div className="col-sm-4 myArticlesWelcome container-fluid my-auto" style={myArticlesStyle}>
                     <div className="row justify-content-evenly my-5">
@@ -150,8 +152,8 @@ export const WelcomeMain = () => {
             </Row>
 
             <Container fluid>
-                <div className="myArticlesWelcome container-fluid text-center mt-4" style={myArticlesStyle}>
-                    <img className='img-fluid bg-black rounded m-auto mt-4' src={mern_logo} style={{width:'25rem'}} alt="Mongo DB Express NodeJS ReactJS technology stack." />
+                <div className="myArticlesWelcome container-fluid text-center mt-5" style={myArticlesStyle}>
+                    <img className='img-fluid bg-black rounded m-auto py-2 px-1' src={mern_logo} style={{width:'25rem'}} alt="Mongo DB Express NodeJS ReactJS technology stack." />
                 </div>
             </Container>
 
@@ -180,34 +182,45 @@ export const WelcomeMain = () => {
     );
 }
 
-const initScrollMagicWelcome = () => {
-    const welcomeCard1Controller = new ScrollMagic.Controller();
-    const welcomeCard1 = new ScrollMagic.Scene({
-            triggerElement: '#welcomeCard1',
-        })
-        .setClassToggle('#welcomeCard1', 'shift')
-        .addTo(welcomeCard1Controller);
+// const initScrollMagicWelcome = () => {
+//     var welcomeCard1Controller = new ScrollMagic.Controller();
+//     var welcomeCard1 = new ScrollMagic.Scene({
+//             triggerElement: '#welcomeCard1',
+//         })
+//         .setClassToggle('#welcomeCard1', 'shift')
+//         .addTo(welcomeCard1Controller);
 
-    const welcomeCard2Controller = new ScrollMagic.Controller();
-    const welcomeCard2 = new ScrollMagic.Scene({
-            triggerElement: '#welcomeCard2',
-        })
-        .setClassToggle('#welcomeCard2', 'shift')
-        .addTo(welcomeCard2Controller);
+//     var welcomeCard2Controller = new ScrollMagic.Controller();
+//     var welcomeCard2 = new ScrollMagic.Scene({
+//             triggerElement: '#welcomeCard2',
+//         })
+//         .setClassToggle('#welcomeCard2', 'shift')
+//         .addTo(welcomeCard2Controller);
 
-    const githubContributionsController = new ScrollMagic.Controller();
-    const githubContributions = new ScrollMagic.Scene({
-            triggerElement: '#githubContributions',
-            offset: -200
-        })
-        .setClassToggle('#githubContributions', 'show')
-        .addTo(githubContributionsController);
+//     var githubContributionsController = new ScrollMagic.Controller();
+//     var githubContributions = new ScrollMagic.Scene({
+//             triggerElement: '#githubContributions',
+//             offset: -200
+//         })
+//         .setClassToggle('#githubContributions', 'show')
+//         .addTo(githubContributionsController);
 
-    const buttonContactController = new ScrollMagic.Controller();
-    const buttonContact = new ScrollMagic.Scene({
-            triggerElement: '#buttonContact',
-            offset: -200
-        })
-        .setClassToggle('#buttonContact', 'show')
-        .addTo(buttonContactController);
-}
+//     var buttonContactController = new ScrollMagic.Controller();
+//     var buttonContact = new ScrollMagic.Scene({
+//             triggerElement: '#buttonContact',
+//             offset: -200
+//         })
+//         .setClassToggle('#buttonContact', 'show')
+//         .addTo(buttonContactController);
+// }
+
+// const clearScrollMagicWelcome = () => {
+//     var welcomeCard1Controller = null;
+//     var welcomeCard1 = null;
+//     var welcomeCard2Controller = null;
+//     var welcomeCard2 = null;
+//     var githubContributionsController = null;
+//     var githubContributions = null;
+//     var buttonContactController = null;
+//     var buttonContact = null;
+// }

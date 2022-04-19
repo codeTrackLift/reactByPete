@@ -1,5 +1,5 @@
 import React from 'react';
-import ScrollMagic from 'scrollmagic';
+import { clearScrollMagicWelcome, initScrollMagicAbout } from './Partials/MyScrollmagic';
 import { Link } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
 import { CodeTrackLift } from './Partials/Typewriter_cTL';
@@ -59,6 +59,7 @@ const imageRectStyle = {
 
 export const About = () => {
 
+    setTimeout(clearScrollMagicWelcome, 0);
     setTimeout(initScrollMagicAbout, 0);
 
     return (
@@ -152,32 +153,4 @@ export const About = () => {
 
         </div>
     )
-}
-
-const initScrollMagicAbout = () => {
-
-    const githubContributionsController = new ScrollMagic.Controller();
-    const githubContributions = new ScrollMagic.Scene({
-            triggerElement: '#githubContributions',
-            offset: -200
-        })
-        .setClassToggle('#githubContributions', 'show')
-        .addTo(githubContributionsController);
-        
-    const buttonContactController = new ScrollMagic.Controller();
-    const buttonContact = new ScrollMagic.Scene({
-            triggerElement: '#buttonContact',
-            offset: -300
-        })
-        .setClassToggle('#buttonContact', 'show')
-        .addTo(buttonContactController);
-
-    const buttonBlogController = new ScrollMagic.Controller();
-    const buttonBlog = new ScrollMagic.Scene({
-            triggerElement: '#buttonBlog',
-            offset: -300
-        })
-        .setClassToggle('#buttonBlog', 'show')
-        .addTo(buttonBlogController);
-
 }
