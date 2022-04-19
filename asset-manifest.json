@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/reactByPete/static/css/main.067b9eca.css",
-    "main.js": "/reactByPete/static/js/main.c09c2db5.js",
+    "main.js": "/reactByPete/static/js/main.28bc8f32.js",
     "static/media/peteTheForce.png": "/reactByPete/static/media/peteTheForce.579230d33eead5f9ff25.png",
     "static/media/peteLaFitness.jpg": "/reactByPete/static/media/peteLaFitness.b393068046f5ac59e195.jpg",
     "static/media/vesselCode_tilt_part.jpg": "/reactByPete/static/media/vesselCode_tilt_part.ff1c18871b748da16c94.jpg",
@@ -13,6 +13,7 @@
     "static/media/peteSTi.jpg": "/reactByPete/static/media/peteSTi.8ec496b1abaa2cd6236a.jpg",
     "static/media/mernStackTrans.png": "/reactByPete/static/media/mernStackTrans.b6f2e2dd60d59a096abb.png",
     "static/media/vsCodeLogo.png": "/reactByPete/static/media/vsCodeLogo.a61dc62c499ed3aeefdc.png",
+    "static/media/mitxPro_logoStacked.jpg": "/reactByPete/static/media/mitxPro_logoStacked.9a3250882b863958253c.jpg",
     "static/media/peteSnowboardingMountain.jpg": "/reactByPete/static/media/peteSnowboardingMountain.6144fd558528751778bb.jpg",
     "static/media/githubContributions.png": "/reactByPete/static/media/githubContributions.0ee78b18aac21d2d73d3.png",
     "static/media/issa_logo.gif": "/reactByPete/static/media/issa_logo.1a5f7c1dc0018c58c9cc.gif",
@@ -22,10 +23,10 @@
     "static/media/bootstrap-logo.svg": "/reactByPete/static/media/bootstrap-logo.b91717f3b8ef81a7bf2e8b03a9579108.svg",
     "index.html": "/reactByPete/index.html",
     "main.067b9eca.css.map": "/reactByPete/static/css/main.067b9eca.css.map",
-    "main.c09c2db5.js.map": "/reactByPete/static/js/main.c09c2db5.js.map"
+    "main.28bc8f32.js.map": "/reactByPete/static/js/main.28bc8f32.js.map"
   },
   "entrypoints": [
     "static/css/main.067b9eca.css",
-    "static/js/main.c09c2db5.js"
+    "static/js/main.28bc8f32.js"
   ]
 }
