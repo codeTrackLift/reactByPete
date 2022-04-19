@@ -6,6 +6,13 @@ import '../Styles/Navbar.css';
 // import '../Styles/Contact.css';
 
 export const Contact = () => {
+
+    const clearWelcomeActive = () => {
+        const welcome = document.getElementById('welcomeNavLink');
+        welcome.classList.remove('active');
+    }
+    setTimeout(clearWelcomeActive, 10)
+
     return (
         <div><h3>Contact</h3></div>
     )

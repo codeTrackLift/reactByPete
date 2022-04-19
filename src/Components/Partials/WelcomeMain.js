@@ -1,9 +1,11 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom';
 import { Button, Container, Nav, Row } from 'react-bootstrap';
 import { CarouselGDPs} from './CarouselGDPs';
 import { clearScrollMagic, initScrollMagicWelcome } from './MyScrollmagic';
 import { Footer } from './Footer';
+import { Blog } from '../Blog';
+import { Contact } from '../Contact';
 import '../../Styles/Cards.css';
 import '../../Styles/Welcome.css';
 import '../../Styles/WelcomeAnimations.css';
@@ -136,12 +138,12 @@ export const WelcomeMain = () => {
                         <p className="card-text"  style={cardBodyPStyle}>20 year Pharmaceutical Professional</p>
                         <p className="card-text"  style={cardBodyPStyle}>Full Stack Coding Bootcamp<span style={{color:'gray'}}> (in progress, Jul 2022)</span></p>
                         <div className="btnContainer mt-3">
-                            <Nav.Link to='/reactByPete/about' href='/reactByPete/about' style={{padding:0}} as={NavLink}>
-                                <Button className='btnDark' variant='secondary' style={{borderRadius:'2px'}} eventKey={2}>
+                            <Nav.Link to='/reactByPete/about' href='/reactByPete/about' style={{padding:0}} as={NavLink} eventKey={2}>
+                                <Button className='btnDark' variant='secondary' style={{borderRadius:'2px'}}>
                                     About
                                 </Button>
                             </Nav.Link>
-                            <Nav.Link to='/reactByPete/resume' href='/reactByPete/resume' style={{padding:0}} as={NavLink}eventKey={5}>
+                            <Nav.Link to='/reactByPete/resume' href='/reactByPete/resume' style={{padding:0}} as={NavLink} eventKey={5}>
                                 <Button variant='secondary' style={{borderRadius:'2px'}}>
                                     Resume
                                 </Button>
@@ -178,6 +180,12 @@ export const WelcomeMain = () => {
 
             <Footer />
 
+        
+        
+            <Routes>
+                <Route path="/reactByPete/blog" element={<Blog/>} />
+                <Route path="/reactByPete/contact" element={<Contact/>} />
+            </Routes>
         </section>
     );
 }

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Nav, Navbar } from 'react-bootstrap'
 import { BrowserRouter, Routes, Route, NavLink, useLocation } from "react-router-dom";
 import '../Styles/App.css';
@@ -15,8 +15,8 @@ import pharma2CodeLogo from '../Images/pharma2code_icon.gif';
 
 export default function App() {
     
-    const [expanded, setExpanded] = React.useState(false);
-    const [isWelcome, setIsWelcome] = React.useState(null);
+    const [expanded, setExpanded] = useState(false);
+    const [isWelcome, setIsWelcome] = useState(null);
     
     const ScrollToTop = () => {
         const { pathname } = useLocation();
@@ -58,7 +58,7 @@ export default function App() {
                     </h3>
                     <Navbar.Collapse className="collapse navbar-collapse" id="navbarTogglerDemo02">
                         <Nav className="navbar-nav me-auto mb-2 mb-lg-0">
-                            <Nav.Link eventKey={1} onClick={() => setExpanded(false)} href='/reactByPete/*' as={NavLink} to='/reactByPete/'>Welcome</Nav.Link>
+                            <Nav.Link id='welcomeNavLink' eventKey={1} onClick={() => setExpanded(false)} href='/reactByPete/' as={NavLink} to='/reactByPete/'>Welcome</Nav.Link>
                             <Nav.Link eventKey={2} onClick={() => setExpanded(false)} href='/reactByPete/about' as={NavLink} to='/reactByPete/about'>About</Nav.Link>
                             <Nav.Link eventKey={3} onClick={() => setExpanded(false)} href='/reactByPete/blog' as={NavLink} to='/reactByPete/blog'>Blog</Nav.Link>
                             <Nav.Link eventKey={4} onClick={() => setExpanded(false)} href='/reactByPete/projects' as={NavLink} to='/reactByPete/projects'>Projects</Nav.Link>

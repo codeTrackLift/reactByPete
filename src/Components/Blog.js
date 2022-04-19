@@ -17,6 +17,13 @@ const mainContentStyle = {
 }
 
 export const Blog = () => {
+
+    const clearWelcomeActive = () => {
+        const welcome = document.getElementById('welcomeNavLink');
+        welcome.classList.remove('active');
+    }
+    setTimeout(clearWelcomeActive, 10)
+
     return (
         <div id="mainContentAbout" style={mainContentStyle}>
             

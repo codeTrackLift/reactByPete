@@ -22,18 +22,25 @@ export const Welcome = () => {
     const [content, setContent] = React.useState('');
     const [background, setBackground] = React.useState('');
     
+    setTimeout(initCBPLogoWelcome, 0);
+    
     const welcomeBackground = () => {
         const newBackground = 'vesselBackground';
         setBackground(newBackground);
     }
+    setTimeout(welcomeBackground, 3000);
     
     const injectContent = () => {
         setContent(<WelcomeMain />);
     }
-
-    setTimeout(initCBPLogoWelcome, 0);
     setTimeout(injectContent, 3000);
-    setTimeout(welcomeBackground, 3000);
+
+
+    const addWelcomeActive = () => {
+        const welcome = document.getElementById('welcomeNavLink');
+        welcome.classList.add('active');
+    }
+    setTimeout(addWelcomeActive, 10)
 
     return (
         <div id='welcomeBackground' 
