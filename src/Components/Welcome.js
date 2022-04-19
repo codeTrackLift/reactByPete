@@ -31,7 +31,7 @@ export const Welcome = () => {
         setContent(<WelcomeMain />);
     }
 
-    initCBPLogoWelcome()
+    setTimeout(initCBPLogoWelcome, 0);
     setTimeout(injectContent, 3000);
     setTimeout(welcomeBackground, 3000);
 

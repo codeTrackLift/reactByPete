@@ -32,17 +32,6 @@ export const initScrollMagicWelcome = () => {
         .addTo(buttonContactController);
 }
 
-export const clearScrollMagicWelcome = () => {
-    var welcomeCard1Controller = null;
-    var welcomeCard1 = null;
-    var welcomeCard2Controller = null;
-    var welcomeCard2 = null;
-    var githubContributionsController = null;
-    var githubContributions = null;
-    var buttonContactController = null;
-    var buttonContact = null;
-}
-
 export const initScrollMagicAbout = () => {
     var githubContributionsController = new ScrollMagic.Controller();
     var githubContributions = new ScrollMagic.Scene({
@@ -69,7 +58,23 @@ export const initScrollMagicAbout = () => {
         .addTo(buttonBlogController);
 }
 
-export const clearScrollMagicAbout = () => {
+export const clearScrollMagic = () => {
+    clearScrollMagicWelcome();
+    clearScrollMagicAbout();
+}
+
+const clearScrollMagicWelcome = () => {
+    var welcomeCard1Controller = null;
+    var welcomeCard1 = null;
+    var welcomeCard2Controller = null;
+    var welcomeCard2 = null;
+    var githubContributionsController = null;
+    var githubContributions = null;
+    var buttonContactController = null;
+    var buttonContact = null;
+}
+
+const clearScrollMagicAbout = () => {
     var githubContributionsController = null;
     var githubContributions = null;
     var buttonContactController = null;

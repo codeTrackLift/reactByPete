@@ -1,5 +1,5 @@
 import React from 'react';
-import { clearScrollMagicWelcome, initScrollMagicAbout } from './Partials/MyScrollmagic';
+import { clearScrollMagic, initScrollMagicAbout } from './Partials/MyScrollmagic';
 import { Link } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
 import { CodeTrackLift } from './Partials/Typewriter_cTL';
@@ -59,7 +59,7 @@ const imageRectStyle = {
 
 export const About = () => {
 
-    setTimeout(clearScrollMagicWelcome, 0);
+    setTimeout(clearScrollMagic, 0);
     setTimeout(initScrollMagicAbout, 0);
 
     return (

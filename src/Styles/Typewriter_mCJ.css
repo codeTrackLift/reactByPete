@@ -1,0 +1,152 @@
+@media (max-width: 635px) {
+    #mCJTypewriter>h2 {
+        font-size: 4vw;
+    }
+
+    #mCJTypewriter>h2 {
+        font-size: 1.375rem !important;
+        letter-spacing: normal !important;
+    }
+}
+
+@media (max-width: 500px) {
+    #mCJTypewriter>h2 {
+        font-size: 1.125rem !important;
+        letter-spacing: normal !important;
+    }
+}
+
+@media (max-width: 350px) {
+    #mCJTypewriter>h2 {
+        font-size: 0.875rem !important;
+        letter-spacing: normal !important;
+    }
+}
+
+@media (max-height: 500px) {
+    #mCJTypewriterSection {
+        margin-top: -5vh;
+    }
+}
+
+#mCJTypewriter1:before,
+#mCJTypewriter1:after,
+#mCJTypewriter2:before,
+#mCJTypewriter2:after,
+#mCJTypewriter3:before,
+#mCJTypewriter3:after,
+#mCJTypewriter4:before,
+#mCJTypewriter4:after,
+#mCJTypewriter5:before,
+#mCJTypewriter5:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+#mCJTypewriter1::before {
+    width: 100vw;
+    background: rgb(50, 50, 50);
+    animation: mCJWrite 1.5s steps(31) 0.5s forwards;
+}
+
+#mCJTypewriter1::after {
+    opacity: 1;
+    width: 0.15em;
+    background: rgb(50, 50, 50);
+    animation: mCJWrite 1.5s steps(31) 0.5s forwards, mCJBlink 0.75s reverse steps(31) 3.25;
+}
+
+@keyframes mCJWrite {
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes mCJBlink {
+    0% {
+        opacity: 0;
+        background: white;
+    }
+
+    49.9% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        background: white;
+    }
+
+    98% {
+        opacity: 1;
+        background: white;
+    }
+
+    100% {
+        opacity: 0;
+        background: white;
+    }
+}
+
+#mCJTypewriter2::before {
+    width: 100vw;
+    background: rgb(50, 50, 50);
+    animation: mCJWrite 1.25s steps(25) 0.5s forwards;
+    animation-delay: 2.5s;
+}
+
+#mCJTypewriter2::after {
+    opacity: 1;
+    width: 0.15em;
+    background: rgb(50, 50, 50);
+    animation: mCJWrite 1.25s steps(25) 0.5s forwards, mCJBlink 0.75s reverse steps(25) 2.125;
+    animation-delay: 2.5s;
+}
+
+#mCJTypewriter3::before {
+    width: 100vw;
+    background: rgb(50, 50, 50);
+    animation: mCJWrite 1.5s steps(31) 0.5s forwards;
+    animation-delay: 4.25s;
+}
+
+#mCJTypewriter3::after {
+    opacity: 1;
+    width: 0.15em;
+    background: rgb(50, 50, 50);
+    animation: mCJWrite 1.5s steps(31) 0.5s forwards, mCJBlink 0.75s reverse steps(31) 3;
+    animation-delay: 4.25s;
+}
+
+#mCJTypewriter4::before {
+    width: 100vw;
+    background: rgb(50, 50, 50);
+    animation: mCJWrite 0.5s steps(3) 0.5s forwards;
+    animation-delay: 6.25s;
+}
+
+#mCJTypewriter4::after {
+    opacity: 1;
+    width: 0.15em;
+    background: rgb(50, 50, 50);
+    animation: mCJWrite 0.5s steps(3) 0.5s forwards, mCJBlink 0.75s reverse steps(3) 1;
+    animation-delay: 6.25s;
+}
+
+#mCJTypewriter5::before {
+    width: 100vw;
+    background: rgb(50, 50, 50);
+    animation: mCJWrite 0.5s steps(2) 0.5s forwards;
+    animation-delay: 7s;
+}
+
+#mCJTypewriter5::after {
+    opacity: 1;
+    width: 0.15em;
+    background: rgb(50, 50, 50);
+    animation: mCJWrite 0.5s steps(2) 0.5s forwards, mCJBlink 0.75s reverse steps(2) infinite;
+    animation-delay: 7s;
+}

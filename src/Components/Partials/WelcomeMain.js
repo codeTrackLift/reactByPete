@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button, Container, Row } from 'react-bootstrap';
 import { CarouselGDPs} from './CarouselGDPs';
-import { initScrollMagicWelcome } from './MyScrollmagic';
+import { clearScrollMagic, initScrollMagicWelcome } from './MyScrollmagic';
 import { Footer } from './Footer';
 import '../../Styles/Cards.css';
 import '../../Styles/Welcome.css';
@@ -73,6 +73,7 @@ const imgSquareStyle = {
 
 export const WelcomeMain = () => {
 
+    setTimeout(clearScrollMagic, 0);
     setTimeout(initScrollMagicWelcome, 0);
 
     return (
