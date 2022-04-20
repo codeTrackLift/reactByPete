@@ -20,13 +20,13 @@ export const Blog = () => {
         const welcome = document.getElementById('welcomeNavLink');
         welcome.classList.remove('active');
     }
-    setTimeout(clearWelcomeActive, 10);
+    setTimeout(clearWelcomeActive, 50);
 
     const navbarCBP = () => {
         const navbarCBPLogo = document.getElementById('navbarCBP');
         navbarCBPLogo.classList.remove('d-none');
     }
-    setTimeout(navbarCBP, 10);
+    setTimeout(navbarCBP, 500);
 
     return (
         <div id="mainContentAbout" style={mainContentStyle}>

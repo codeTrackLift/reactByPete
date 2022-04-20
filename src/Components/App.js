@@ -20,10 +20,7 @@ export default function App() {
     
     const ScrollToTop = () => {
         const { pathname } = useLocation();
-        if(pathname.length === 1) {
-            setIsWelcome(true);
-        } 
-        setIsWelcome(false);
+        if(pathname.length === 1) setIsWelcome('d-none');
         useEffect(() => {
             window.scrollTo(0, 0);
         }, [pathname]);
@@ -47,10 +44,8 @@ export default function App() {
                         onClick={() => setExpanded(expanded ? false : 'expanded')}>
                         <img id='pharma2CodeLogo' src={pharma2CodeLogo} alt='Pill inside angle bracket logo' />
                     </Navbar.Toggle>
-                    <h3 style={{fontStyle:'italic',letterSpacing:'2vw'}}
-                        className='d-block d-sm-none'
-                    >
-                        <span id='navbarCBP' className={isWelcome ? 'd-none' : ' '}>
+                    <h3 style={{fontStyle:'italic',letterSpacing:'2vw',transition:'all 1s ease-in-out'}} className='d-block d-sm-none'>
+                        <span id='navbarCBP' className={isWelcome}>
                             <span style={{color:'white'}}>code</span>
                             <span style={{color:'#00857c'}}>By</span>
                             <span style={{color:'lime'}}>Pete</span>

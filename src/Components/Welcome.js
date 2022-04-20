@@ -21,7 +21,7 @@ export const Welcome = () => {
 
     const [content, setContent] = React.useState('');
     const [background, setBackground] = React.useState('');
-    
+
     setTimeout(initCBPLogoWelcome, 0);
     
     const welcomeBackground = () => {
