@@ -50,7 +50,7 @@ export default function App() {
                     <h3 style={{fontStyle:'italic',letterSpacing:'2vw'}}
                         className='d-block d-sm-none'
                     >
-                        <span id='navbarCBP' className={() => setIsWelcome(isWelcome ? 'd-none' : null)}>
+                        <span id='navbarCBP' className={isWelcome ? 'd-none' : ' '}>
                             <span style={{color:'white'}}>code</span>
                             <span style={{color:'#00857c'}}>By</span>
                             <span style={{color:'lime'}}>Pete</span>

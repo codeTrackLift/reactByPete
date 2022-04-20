@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { clearScrollMagic, initScrollMagicAbout } from './Helpers/MyScrollmagic';
 import { Button, Nav } from 'react-bootstrap';
+import { initCBPLogoDiv } from './Helpers/cBPLogo';
 import { CodeTrackLift } from './Partials/Typewriter_cTL';
 import { CarouselRelent } from './Partials/CarouselRelent';
 import { Footer } from './Partials/Footer';
@@ -67,6 +68,12 @@ export const About = () => {
         welcome.classList.remove('active');
     }
     setTimeout(clearWelcomeActive, 10);
+
+    const navbarCBP = () => {
+        const navbarCBPLogo = document.getElementById('navbarCBP');
+        navbarCBPLogo.classList.remove('d-none');
+    }
+    setTimeout(navbarCBP, 10);
 
     return (
         <div id="mainContentAbout" style={mainContentStyle}>
