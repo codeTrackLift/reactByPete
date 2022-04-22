@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import { Nav, Navbar } from 'react-bootstrap'
 import { BrowserRouter, Routes, Route, NavLink, useLocation } from "react-router-dom";
-import '../Styles/App.css';
-import '../Styles/Typography.css';
-import '../Styles/Navbar.css';
+import '../styles/App.css';
+import '../styles/Typography.css';
+import '../styles/Navbar.css';
 import { Welcome } from './Welcome';
 import { About } from './About';
 import { Blog } from './Blog';
 import { Projects } from './Projects';
 import { Resume } from './Resume';
 import { Contact } from './Contact';
-import pharma2CodeLogo from '../Images/pharma2code_icon.gif';
+import pharma2CodeLogo from '../images/pharma2code_icon.gif';
 
 
 export default function App() {

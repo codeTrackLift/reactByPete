@@ -1,22 +1,22 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { clearScrollMagic, initScrollMagicAbout } from './Helpers/MyScrollmagic';
+import { clearScrollMagic, initScrollMagicAbout } from './helpers/MyScrollmagic';
 import { Button, Nav } from 'react-bootstrap';
-import { initCBPLogoDiv } from './Helpers/cBPLogo';
-import { CodeTrackLift } from './Partials/Typewriter_cTL';
-import { CarouselRelent } from './Partials/CarouselRelent';
-import { Footer } from './Partials/Footer';
-import '../Styles/About.css';
-import '../Styles/Cards.css';
-import profilepic from '../Images/about/profilepic.gif';
-import crushItApple from '../Images/about/crushItApple.jpg';
-import githubContributions_100Days from '../Images/about/githubContributions_100Days.jpg';
-import issa_logo from '../Images/about/issa_logo.gif';
-import peteSwitch from '../Images/about/peteSwitch.jpg';
-import peteLaFitness from '../Images/about/peteLaFitness.jpg';
-import peteSnowboardingMountain from '../Images/about/peteSnowboardingMountain.jpg';
-import peteSTi from '../Images/about/peteSTi.jpg';
-import peteTheForce from '../Images/about/peteTheForce.png';
+import { initCBPLogoDiv } from './helpers/cBPLogo';
+import { CodeTrackLift } from './partials/Typewriter_cTL';
+import { CarouselRelent } from './partials/CarouselRelent';
+import { Footer } from './partials/Footer';
+import '../styles/About.css';
+import '../styles/Cards.css';
+import profilepic from '../images/about/profilepic.gif';
+import crushItApple from '../images/about/crushItApple.jpg';
+import githubContributions_100Days from '../images/about/githubContributions_100Days.jpg';
+import issa_logo from '../images/about/issa_logo.gif';
+import peteSwitch from '../images/about/peteSwitch.jpg';
+import peteLaFitness from '../images/about/peteLaFitness.jpg';
+import peteSnowboardingMountain from '../images/about/peteSnowboardingMountain.jpg';
+import peteSTi from '../images/about/peteSTi.jpg';
+import peteTheForce from '../images/about/peteTheForce.png';
 
 const mainContentStyle = {
     backgroundSize: 'cover',

@@ -1,10 +1,10 @@
 import React from 'react';
-import { initCBPLogoWelcome } from './Helpers/cBPLogo';
-import { StationInLife } from './Partials/Typewriter_sIL';
-import { WelcomeMain } from './Partials/WelcomeMain';
-import '../Styles/Cards.css';
-import '../Styles/Welcome.css';
-import '../Styles/WelcomeAnimations.css';
+import { initCBPLogoWelcome } from './helpers/cBPLogo';
+import { StationInLife } from './partials/Typewriter_sIL';
+import { WelcomeMain } from './partials/WelcomeMain';
+import '../styles/Cards.css';
+import '../styles/Welcome.css';
+import '../styles/WelcomeAnimations.css';
 
 const welcomeStyle = {
     display: 'block',

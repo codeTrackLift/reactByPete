@@ -16,7 +16,7 @@ a:focus {
     font-family: 'Menlo Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('Menlo Regular'), url('../Libraries/Menlo-Regular.woff') format('woff');
+    src: local('Menlo Regular'), url('../libraries/Menlo-Regular.woff') format('woff');
 }
 
 .menloRegular {

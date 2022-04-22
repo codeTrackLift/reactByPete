@@ -1,9 +1,9 @@
 import React from 'react';
-import Footer from './Partials/Footer';
+import Footer from './partials/Footer';
 import { Carousel, Container, Row } from 'react-bootstrap';
-import '../Styles/App.css';
-import '../Styles/Navbar.css';
-// import '../Styles/Resume.css';
+import '../styles/App.css';
+import '../styles/Navbar.css';
+// import '../styles/Resume.css';
 
 export const Resume = () => {
 

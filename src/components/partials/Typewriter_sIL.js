@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../Styles/Typewriter_sIL.css'
+import '../../styles/Typewriter_sIL.css'
 
 const sILSectionStyle = {
     backgroundColor: 'black',

@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../Styles/Typewriter_cTL.css'
+import '../../styles/Typewriter_cTL.css'
 
 const cTLSectionStyle = {
     backgroundColor: 'rgb(50, 50, 50)',

@@ -1,10 +1,10 @@
 import React from 'react';
 import { Accordion, Button, Nav } from 'react-bootstrap';
-import { MyCodingJourney } from './Partials/Typewriter_mCJ';
-import { CarouselRelent } from './Partials/CarouselRelent';
-import { Footer } from './Partials/Footer';
-import '../Styles/Cards.css';
-import mitxPro from '../Images/about/mitxPro_logoStacked.jpg'
+import { MyCodingJourney } from './partials/Typewriter_mCJ';
+import { CarouselRelent } from './partials/CarouselRelent';
+import { Footer } from './partials/Footer';
+import '../styles/Cards.css';
+import mitxPro from '../images/about/mitxPro_logoStacked.jpg'
 
 const mainContentStyle = {
     backgroundSize: 'cover',

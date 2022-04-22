@@ -1,11 +1,11 @@
 import React from 'react';
-import Footer from './Partials/Footer';
+import Footer from './partials/Footer';
 import { Carousel, Container, Row } from 'react-bootstrap';
-import '../Styles/App.css';
-import '../Styles/Navbar.css';
-// import '../Styles/Contact.css';
+import '../styles/Navbar.css';
+import '../styles/Cards.css';
+// import '../styles/Projects.css';
 
-export const Contact = () => {
+export const Projects = () => {
 
     const clearWelcomeActive = () => {
         const welcome = document.getElementById('welcomeNavLink');
@@ -14,6 +14,6 @@ export const Contact = () => {
     setTimeout(clearWelcomeActive, 10)
 
     return (
-        <div><h3>Contact</h3></div>
+        <div><h3>Projects</h3></div>
     )
 }

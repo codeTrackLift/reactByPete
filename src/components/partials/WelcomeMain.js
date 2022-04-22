@@ -2,21 +2,21 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Button, Container, Nav, Row } from 'react-bootstrap';
 import { CarouselGDPs} from './CarouselGDPs';
-import { clearScrollMagic, initScrollMagicWelcome } from '../Helpers/MyScrollmagic';
+import { clearScrollMagic, initScrollMagicWelcome } from '../helpers/MyScrollmagic';
 import { Footer } from './Footer';
-import '../../Styles/Cards.css';
-import '../../Styles/Welcome.css';
-import '../../Styles/WelcomeAnimations.css';
-import html5_logo from '../../Images/about/html5_logo.gif';
-import css3_logo from '../../Images/about/css3_logo.gif';
-import javascript_logo from '../../Images/about/javascript_logo.gif';
-import git_logo from '../../Images/about/gitLogoOrangeRed.png'
-import vscode_logo from '../../Images/about/vsCodeLogo.png'
-import bootstrap_logo from '../../Images/about/bootstrap-logo.svg'
-import jest_logo from '../../Images/about/jest_logo.gif'
-import crushit_img from '../../Images/about/crushItApple.jpg'
-import mern_logo from '../../Images/about/mernStackTrans.png'
-import githubContributions from '../../Images/about/githubContributions.png'
+import '../../styles/Cards.css';
+import '../../styles/Welcome.css';
+import '../../styles/WelcomeAnimations.css';
+import html5_logo from '../../images/about/html5_logo.gif';
+import css3_logo from '../../images/about/css3_logo.gif';
+import javascript_logo from '../../images/about/javascript_logo.gif';
+import git_logo from '../../images/about/gitLogoOrangeRed.png'
+import vscode_logo from '../../images/about/vsCodeLogo.png'
+import bootstrap_logo from '../../images/about/bootstrap-logo.svg'
+import jest_logo from '../../images/about/jest_logo.gif'
+import crushit_img from '../../images/about/crushItApple.jpg'
+import mern_logo from '../../images/about/mernStackTrans.png'
+import githubContributions from '../../images/about/githubContributions.png'
 
 const mySectionStyle = {
     width: '100%',

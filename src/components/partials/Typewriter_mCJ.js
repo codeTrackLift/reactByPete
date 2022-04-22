@@ -1,5 +1,5 @@
 import React from 'react'
-// import '../../Styles/Typewriter_mCJ.css'
+// import '../../styles/Typewriter_mCJ.css'
 
 const mCJSectionStyle = {
     marginTop: '2rem !important',
