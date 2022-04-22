@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { clearScrollMagic, initScrollMagicAbout } from './helpers/MyScrollmagic';
+import { clearScrollMagic, initScrollMagicAbout } from './helpers/myScrollmagic';
 import { Button, Nav } from 'react-bootstrap';
 import { initCBPLogoDiv } from './helpers/cBPLogo';
 import { CodeTrackLift } from './partials/Typewriter_cTL';

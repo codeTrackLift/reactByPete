@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Button, Container, Nav, Row } from 'react-bootstrap';
 import { CarouselGDPs} from './CarouselGDPs';
-import { clearScrollMagic, initScrollMagicWelcome } from '../helpers/MyScrollmagic';
+import { clearScrollMagic, initScrollMagicWelcome } from '../helpers/myScrollmagic';
 import { Footer } from './Footer';
 import '../../styles/Cards.css';
 import '../../styles/Welcome.css';
