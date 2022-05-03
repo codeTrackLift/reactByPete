@@ -19,7 +19,7 @@ export const Footer = () => {
                 </span>
             </p>
             <div>
-                <a href="https://github.com/codeTrackLift/reactByPete" 
+                <a href="https://github.com/codeTrackLift/reactByPete#readme" 
                     target="_blank" rel='noreferrer'>
                     <img src="https://codetracklift.github.io/codeTrackLift/logos/GitHub-Mark-Light-64px.png" 
                         className='socialLogo' alt="GitHub Icon"/>
